@@ -17,7 +17,7 @@
         <a class="nav-link" href="#">Create an account</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="GuestHome">Log in as a Guest</a>
+        <a class="nav-link" href="Guest Home">Log in as a Guest</a>
       </li>
       <!--li class="nav-item">
         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>

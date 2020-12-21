@@ -13,18 +13,12 @@
       <a class="nav-link active" aria-current="page" href="#">Lidya Nuramo CMS project</a>
     </nav>
     <ul class="nav justify-content-end">
-        <!--li class="nav-item" text-align="left">
-          <a class="nav-link active" aria-current="page" href="#" >Lidya Nuramo CMS project</a>
-        </li-->
         <li class="nav-item">
           <a class="nav-link" href="#">Create an account</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="Guest Home">Log in as a Guest</a>
         </li>
-        <!--li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-        </li-->
     </ul>
   </body>
   <footer>

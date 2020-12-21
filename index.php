@@ -9,10 +9,10 @@
     <title>CMS Project - Lidya Nuramo</title>
   </head>
   <body>
-    <nav class="nav">
+    <nav class="nav bg-dark text-white" >
       <a class="nav-link active" aria-current="page" href="#">Lidya Nuramo CMS project</a>
     </nav>
-    <ul class="nav justify-content-end" margin-top="-20 px;">
+    <ul class="nav justify-content-end bg-dark text-white">
         <li class="nav-item">
           <a class="nav-link" href="#">Create an account</a>
         </li>

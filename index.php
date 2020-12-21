@@ -12,7 +12,7 @@
     <nav class="nav">
       <a class="nav-link active" aria-current="page" href="#">Lidya Nuramo CMS project</a>
     </nav>
-    <ul class="nav justify-content-end">
+    <ul class="nav justify-content-end" margin-top="-20 px;">
         <li class="nav-item">
           <a class="nav-link" href="#">Create an account</a>
         </li>

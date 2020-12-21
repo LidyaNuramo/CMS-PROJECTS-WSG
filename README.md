@@ -1,3 +1,3 @@
 # CMS-PROJECTS-WSG
 
-Site locatesd on: https://lidyanuramo.com/
+Site located at: https://lidyanuramo.com/

@@ -10,8 +10,8 @@
   </head>
   <body>
     <ul class="nav justify-content-end">
-      <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="#" text-align="left">Lidya Nuramo CMS project</a>
+      <li class="nav-item" text-align="left">
+        <a class="nav-link active" aria-current="page" href="#" >Lidya Nuramo CMS project</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Create an account</a>

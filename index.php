@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <title>CMS Project - Lidya Nuramo</title>
   </head>
-  <body >
+  <body>
     <nav class="nav">
       <a class="nav-link active" aria-current="page" href="#">Lidya Nuramo CMS project</a>
     </nav>
@@ -21,7 +21,7 @@
       </li>
     </ul>
     <div class="p-3 mb-2 bg-secondary text-white">
-      Log in.
+      Log in now.
     </div>
   </body>
   <footer>

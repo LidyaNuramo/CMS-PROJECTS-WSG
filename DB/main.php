@@ -1,11 +1,10 @@
 <?php
-  $dbhost="localhost"; 
-  $dbuser="root"; 
-  $dbpassword="VhFtn4kUqaa6"; 
-  $dbname="Webservers";
-
   function init_connection(){
-    $connection = mysqli_connect($dbhost, $dbuser, $dbpassword, $dbname);
+    $dbhost="localhost"; 
+    $dbuser="root"; 
+    $dbpassword="VhFtn4kUqaa6"; 
+    $dbname="Webservers";
+    global $connection = mysqli_connect($dbhost, $dbuser, $dbpassword, $dbname);
     if (!$connection) {
       echo " MySQL Connection error." . PHP_EOL;
       echo "Errno: " . mysqli_connect_errno() . PHP_EOL;
@@ -20,7 +19,7 @@
 
   function get_rows($tablename){
     init_connection();
-    $query = "SELECT * FROM ".$tablename;
+    $query = "SELECT * FROM " . $tablename;
     $result = mysqli_query($connection, $query) or die ("DB error: $dbname");
     close_connection();
     return $result;

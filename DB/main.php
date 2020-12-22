@@ -20,8 +20,7 @@
   function get_rows($tablename){
     init_connection();
     $query = "SELECT * FROM ".$tablename;
-    echo $tablename;
-    $result = mysqli_query($connection, $query) or die ("DB error: $dbname".$tablename);
+    $result = mysqli_query($connection, $query) or die ("DB error: $dbname");
     close_connection();
     return $result;
   }

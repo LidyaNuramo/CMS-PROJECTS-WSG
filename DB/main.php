@@ -4,7 +4,8 @@
     $dbuser="root"; 
     $dbpassword="VhFtn4kUqaa6"; 
     $dbname="Webservers";
-    global $connection = mysqli_connect($dbhost, $dbuser, $dbpassword, $dbname);
+    global $connection;
+    $connection = mysqli_connect($dbhost, $dbuser, $dbpassword, $dbname);
     if (!$connection) {
       echo " MySQL Connection error." . PHP_EOL;
       echo "Errno: " . mysqli_connect_errno() . PHP_EOL;

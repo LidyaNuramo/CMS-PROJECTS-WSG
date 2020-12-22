@@ -9,7 +9,6 @@
     $dbuser="root"; 
     $dbpassword="VhFtn4kUqaa6"; 
     $dbname="Webservers";
-    $connection;
     $connection = mysqli_connect($dbhost, $dbuser, $dbpassword, $dbname);
     if (!$connection) {
       echo " MySQL Connection error." . PHP_EOL;

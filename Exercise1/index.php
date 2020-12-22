@@ -1,3 +1,6 @@
+<?php
+    include $_SERVER['DOCUMENT_ROOT'].'/DB/main.php';
+?>
 <html>
     <head>
         <title>Lidya Nuramo - Exercise 1</title>
@@ -8,15 +11,7 @@
         <h1>Exercise 1 - Monitered hosts</h1>
         <body>
             <?php
-                $dbhost="localhost"; $dbuser="root"; $dbpassword="VhFtn4kUqaa6"; $dbname="Webservers";
-                $connection = mysqli_connect($dbhost, $dbuser, $dbpassword, $dbname);
-                if (!$connection) {
-                echo " MySQL Connection error." . PHP_EOL;
-                echo "Errno: " . mysqli_connect_errno() . PHP_EOL;
-                echo "Error: " . mysqli_connect_error() . PHP_EOL;
-                exit;
-                }
-                $result = mysqli_query($connection, "SELECT * FROM hosts") or die ("DB error: $dbname");
+                $result = get_rows("hosts");
                 print "<TABLE CELLPADDING=5 BORDER=1>";
                 print "<TR><TD>id</TD><TD>Address</TD><TD>Port</TD><TD>Connection Status</TD><TD>Number of Attempts</TD><TD>Time of connection loss</TD><TD>Duration of connection loss (in minutes)</TD></TR>\n";
                 while ($row = mysqli_fetch_array ($result)) {
@@ -45,7 +40,6 @@
                     print "<TR><TD>$id</TD><TD>$address</TD><TD>$port</TD><TD>$status</TD><TD>$errno</TD><TD>$time</TD><TD>$durationmin min $durationsec sec </TD></TR>\n";
                 }
                 print "</TABLE>";
-                mysqli_close($connection);
             ?>
     </body>
 </html>

@@ -1,11 +1,6 @@
 <?php
-  $dbhost; 
-  $dbuser; 
-  $dbpassword; 
-  $dbname;
-  $connection;
   function init_connection(){
-    global $dbhost, $dbuser, $dbpassword, $dbname, $connection;
+    static $dbhost, $dbuser, $dbpassword, $dbname, $connection;
     $dbhost="localhost"; 
     $dbuser="root"; 
     $dbpassword="VhFtn4kUqaa6"; 

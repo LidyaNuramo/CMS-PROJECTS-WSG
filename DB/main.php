@@ -26,7 +26,7 @@
     init_connection();
     $query = "SELECT * FROM " . $tablename;
     echo $tablename;
-    $result = mysqli_query($connection, $query) or die ("DB error: $dbname");
+    $result = mysqli_query($connection, $query) or die ("DB error: $dbname".$tablename);
     close_connection();
     return $result;
   }

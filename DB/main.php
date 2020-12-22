@@ -1,6 +1,4 @@
 <?php
-  function init_connection(){
-    static $dbhost, $dbuser, $dbpassword, $dbname, $connection;
     $dbhost="localhost"; 
     $dbuser="root"; 
     $dbpassword="VhFtn4kUqaa6"; 
@@ -12,14 +10,12 @@
       echo "Error: " . mysqli_connect_error() . PHP_EOL;
       exit;
     }
-  }
     
   function close_connection(){
     mysqli_close($connection);
   }
 
   function get_rows($tablename){
-    init_connection();
     $query = "SELECT * FROM " . $tablename;
     echo $tablename;
     $result = mysqli_query($connection, $query) or die ("DB error: $dbname".$tablename);
@@ -28,7 +24,6 @@
   }
 
   function select_row($tablename, $id){
-    init_connection();
     $query = "SELECT * FROM ".$tablename." where id='".$id."'";
     $result = mysqli_query($connection, $query) or die ("DB error: $dbname");
     close_connection();

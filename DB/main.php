@@ -11,6 +11,9 @@
       echo "Error: " . mysqli_connect_error() . PHP_EOL;
       exit;
     }
+    else{
+      return $connection;
+    }
   }
     
   function close_connection(){
@@ -18,9 +21,9 @@
   }
 
   function get_rows($tablename){
-    init_connection();
+    $result_connection=init_connection();
     $query = "SELECT * FROM ".$tablename;
-    $result = mysqli_query($connection, $query) or die ("DB error: $dbname");
+    $result = mysqli_query($result_connection, $query) or die ("DB error: $dbname");
     close_connection();
     return $result;
   }

@@ -1,12 +1,10 @@
 <?php
-  $connection="";
-  $dbname="";
+  $dbhost="localhost"; 
+  $dbuser="root"; 
+  $dbpassword="VhFtn4kUqaa6"; 
+  $dbname="Webservers";
 
   function init_connection(){
-    $dbhost="localhost"; 
-    $dbuser="root"; 
-    $dbpassword="VhFtn4kUqaa6"; 
-    $dbname="Webservers";
     $connection = mysqli_connect($dbhost, $dbuser, $dbpassword, $dbname);
     if (!$connection) {
       echo " MySQL Connection error." . PHP_EOL;

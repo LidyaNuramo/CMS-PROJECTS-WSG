@@ -30,7 +30,7 @@
 
   function select_row($tablename, $id){
     init_connection();
-    $query = "SELECT * FROM ".$tablename."where id='".$id."'";
+    $query = "SELECT * FROM ".$tablename." where id='".$id."'";
     $result = mysqli_query($connection, $query) or die ("DB error: $dbname");
     close_connection();
   }

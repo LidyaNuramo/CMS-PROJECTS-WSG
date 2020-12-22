@@ -9,18 +9,18 @@
     <title>CMS Project - Lidya Nuramo</title>
   </head>
   <body >
+    <nav class="nav" bgcolor="rgba(245, 245, 245, 0.4)">
+      <a class="nav-link active" aria-current="page" href="#">Lidya Nuramo CMS project</a>
+    </nav>
+    <ul class="nav justify-content-end" bgcolor="rgba(245, 245, 245, 0.4)">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Create an account</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Guest Home">Log in as a Guest</a>
+      </li>
+    </ul>
     <div class="p-3 mb-2 bg-secondary text-white">
-      <nav class="nav" bgcolor="rgba(245, 245, 245, 0.4)">
-        <a class="nav-link active" aria-current="page" href="#">Lidya Nuramo CMS project</a>
-      </nav>
-      <ul class="nav justify-content-end" bgcolor="rgba(245, 245, 245, 0.4)">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Create an account</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Guest Home">Log in as a Guest</a>
-          </li>
-      </ul>
       Log in.
     </div>
   </body>

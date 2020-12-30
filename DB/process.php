@@ -14,7 +14,7 @@ if(!empty($_GET['action'])){
 				$_SESSION['username']=$user['FirstName'];
 				$_SESSION['lastname']=$user['LastName'];
 				$_SESSION['userID']=$user['userID'];
-				header('Location:Home');
+				header('../Location:Home');
 				break;
 		   }
 		   else{

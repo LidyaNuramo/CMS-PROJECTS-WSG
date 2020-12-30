@@ -27,7 +27,7 @@
 			{
 			  case 'yes':?>
 				<div class="form-group bg-secondary text-white"">
-				  <label style="font-size:1.5vw;color: green;font-weight: bold;" class="control-label">&nbsp;&nbsp;&nbsp;&nbsp;Account successfully created. Please log in.</label>
+				  <label for="exampleInputEmail1" style="color: green;" class="control-label">&nbsp;&nbsp;&nbsp;&nbsp;Account successfully created. Please log in.</label>
 				  <br>
 				</div>
 				<?php
@@ -36,7 +36,7 @@
 			  ?>
 
 				<div class="form-group bg-secondary text-white"">
-				  <label style="font-size:1.5vw;color: red;font-weight: bold;" class="control-label">&nbsp;&nbsp;&nbsp;&nbsp;Incorrect email or password. Please try again.</label>
+				  <label for="exampleInputEmail1" style="color: red;" class="control-label">&nbsp;&nbsp;&nbsp;&nbsp;Incorrect email or password. Please try again.</label>
 				  <br>
 				</div>
 				<?php
@@ -45,7 +45,7 @@
 			  ?>
 
 				<div class="form-group bg-secondary text-white"">
-				  <label style="font-size:1.5vw;color: red;font-weight: bold;" class="control-label">&nbsp;&nbsp;&nbsp;&nbsp;Please log in first as you are currently not logged in.</label>
+				  <label for="exampleInputEmail1" style="color: red;" class="control-label">&nbsp;&nbsp;&nbsp;&nbsp;Please log in first as you are currently not logged in.</label>
 				  <br>
 				</div>
 				<?php

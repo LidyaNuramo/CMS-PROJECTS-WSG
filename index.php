@@ -21,23 +21,62 @@
       </li>
     </ul>
     <div class="p-3 mb-2 bg-secondary text-white">
-      <form action="DB/process.php?action=login" method="GET">
+      <form action="DB/process.php?action=login" method="POST">
+		<?php
+      if(!empty($_GET['action']))
+      {
+        switch($_GET['action'])
+        {
+          case 'yes':?>
+            <div class="form-group row">
+              <label style="font-size:1.5vw;margin-left: 50px;color: green;font-weight: bold;" class="control-label">Account successfully created. Please log in.</label>
+              <br>
+              <br>
+            </div>
+      <?php
+            break;
+          case 'no':
+          ?>
+
+            <div class="form-group row">
+              <label style="font-size:1.5vw;margin-left: 50px;color: red;font-weight: bold;" class="control-label">Incorrect email or password. Please try again.</label>
+              <br>
+              <br>
+            </div>
+            <?php
+            break;
+          case 'noaccount':
+          ?>
+
+            <div class="form-group row">
+              <label style="font-size:1.5vw;margin-left: 50px;color: red;font-weight: bold;" class="control-label">Please log in first as you are currently not logged in.</label>
+              <br>
+              <br>
+            </div>
+            <?php
+            break;
+        }
+      }
+      ?>
         <div class="form-group">
           <label for="exampleInputEmail1">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
           <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
         </div>
         <div class="form-group">
           <label for="exampleInputPassword1">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          <input type="password" name="email" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
     </div>
   </body>
   <footer>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+		<div class="Footer" id="Footer">
+			<p align="right" style="margin-right: 10px;margin-top: 50px;color: white;"> © 2020, Lidya Nuramo </p>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
   </footer>  
 </html>

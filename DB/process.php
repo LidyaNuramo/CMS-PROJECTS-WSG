@@ -18,7 +18,7 @@ if(!empty($_GET['action'])){
 				break;
 		   }
 		   else{
-				header('Location:index.php?action=no');
+				header('Location:../index.php?action=no');
 		   }
 		   break;
    }

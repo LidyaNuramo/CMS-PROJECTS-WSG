@@ -20,39 +20,6 @@
         <a class="nav-link" href="Guest Home">Log in as a Guest</a>
       </li>
     </ul>
-	<?php
-      if(!empty($_GET['action']))
-      {
-        switch($_GET['action'])
-        {
-          case 'yes':?>
-            <div class="form-group row">
-              <label style="font-size:1.5vw;margin-left: 50px;color: green;font-weight: bold;" class="control-label">Account successfully created. Please log in.</label>
-              <br>
-            </div>
-      <?php
-            break;
-          case 'no':
-          ?>
-
-            <div class="form-group row">
-              <label style="font-size:1.5vw;margin-left: 50px;color: red;font-weight: bold;" class="control-label">Incorrect email or password. Please try again.</label>
-              <br>
-            </div>
-            <?php
-            break;
-          case 'noaccount':
-          ?>
-
-            <div class="form-group row">
-              <label style="font-size:1.5vw;margin-left: 50px;color: red;font-weight: bold;" class="control-label">Please log in first as you are currently not logged in.</label>
-              <br>
-            </div>
-            <?php
-            break;
-        }
-      }
-    ?>
 	<div class="p-3 mb-2 bg-secondary text-white">
       <form action="DB/process.php?action=login" method="POST">
         <div class="form-group">
@@ -66,6 +33,39 @@
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
+	  <?php
+		  if(!empty($_GET['action']))
+		  {
+			switch($_GET['action'])
+			{
+			  case 'yes':?>
+				<div class="form-group row">
+				  <label style="font-size:1.5vw;margin-left: 50px;color: green;font-weight: bold;" class="control-label">Account successfully created. Please log in.</label>
+				  <br>
+				</div>
+		  <?php
+				break;
+			  case 'no':
+			  ?>
+
+				<div class="form-group row">
+				  <label style="font-size:1.5vw;margin-left: 50px;color: red;font-weight: bold;" class="control-label">Incorrect email or password. Please try again.</label>
+				  <br>
+				</div>
+				<?php
+				break;
+			  case 'noaccount':
+			  ?>
+
+				<div class="form-group row">
+				  <label style="font-size:1.5vw;margin-left: 50px;color: red;font-weight: bold;" class="control-label">Please log in first as you are currently not logged in.</label>
+				  <br>
+				</div>
+				<?php
+				break;
+			}
+		  }
+	  ?>
     </div>
   </body>
   <footer>

@@ -11,7 +11,8 @@
         <h1>Exercise 1 - Monitered hosts</h1>
         <body>
             <?php
-                $result = get_rows("hosts");
+				$database= new Database();
+                $result = $database->get_rows("hosts");
                 print "<TABLE CELLPADDING=5 BORDER=1>";
                 print "<TR><TD>id</TD><TD>Address</TD><TD>Port</TD><TD>Connection Status</TD><TD>Number of Attempts</TD><TD>Time of connection loss</TD><TD>Duration of connection loss (in minutes)</TD></TR>\n";
                 while ($row = mysqli_fetch_array ($result)) {

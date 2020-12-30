@@ -4,6 +4,7 @@ Site located at: https://lidyanuramo.com/
 
 To commit changes SSH to VM and run: sudo git pull https://github.com/LidyaNuramo/CMS-PROJECTS-WSG.git
 
+cd /opt/bitnami/apache2/htdocs
 sudo git init
 sudo git add .
 sudo git config --global user.email "lidyagnuramom@gmail.com"

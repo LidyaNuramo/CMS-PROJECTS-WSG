@@ -12,13 +12,14 @@
         <body>
             <?php
 				$database= new Database();
-                $result = $database->get_rows("hosts");
+                $where['id']="";
+                $results=$database->getRows("Restaurants","*",$where);
                 print "<TABLE CELLPADDING=5 BORDER=1>";
                 print "<TR><TD>id</TD><TD>Address</TD><TD>Port</TD><TD>Connection Status</TD><TD>Number of Attempts</TD><TD>Time of connection loss</TD><TD>Duration of connection loss (in minutes)</TD></TR>\n";
-                while ($row = mysqli_fetch_array ($result)) {
-                    $id = $row[0];
-                    $address = $row[1];
-                    $port = $row[2];
+                foreach($results as $row){
+                    $id = $row['id'];
+                    $address = $row['address'];
+                    $port = $row['port'];
                     $time = '';
                     $duration = '';
                     $durationmin = 0;

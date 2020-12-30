@@ -26,7 +26,7 @@
 			switch($_GET['action'])
 			{
 			  case 'yes':?>
-				<div class="form-group row bg-secondary text-white"">
+				<div class="form-group bg-secondary text-white"">
 				  <label style="font-size:1.5vw;color: green;font-weight: bold;align:center;" class="control-label">Account successfully created. Please log in.</label>
 				  <br>
 				</div>
@@ -35,7 +35,7 @@
 			  case 'no':
 			  ?>
 
-				<div class="form-group row bg-secondary text-white"">
+				<div class="form-group bg-secondary text-white"">
 				  <label style="font-size:1.5vw;color: red;font-weight: bold;align:center;" class="control-label">Incorrect email or password. Please try again.</label>
 				  <br>
 				</div>
@@ -44,7 +44,7 @@
 			  case 'noaccount':
 			  ?>
 
-				<div class="form-group row bg-secondary text-white"">
+				<div class="form-group bg-secondary text-white"">
 				  <label style="font-size:1.5vw;color: red;font-weight: bold;align:center;" class="control-label">Please log in first as you are currently not logged in.</label>
 				  <br>
 				</div>

@@ -21,25 +21,27 @@
       </li>
     </ul>
 	<div class="p-3 mb-2 bg-secondary text-white">
-      <form action="DB/process.php?action=login" method="POST">
-        <div class="form-group">
-          <label for="exampleInputEmail1">Email address</label>
-          <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
-          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-        </div>
-        <div class="form-group">
-          <label for="exampleInputPassword1">Password</label>
-          <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
-	  <?php
+		<form action="DB/process.php?action=login" method="POST">
+			<div class="form-group">
+			  <label for="exampleInputEmail1">Email address</label>
+			  <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+			  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+			</div>
+			<div class="form-group">
+			  <label for="exampleInputPassword1">Password</label>
+			  <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+			</div>
+			<br>
+			<button type="submit" class="btn btn-primary">Submit</button>
+		</form>
+	</div>
+		<?php
 		  if(!empty($_GET['action']))
 		  {
 			switch($_GET['action'])
 			{
 			  case 'yes':?>
-				<div class="form-group row">
+				<div class="form-group row bg-secondary text-white"">
 				  <label style="font-size:1.5vw;margin-left: 50px;color: green;font-weight: bold;" class="control-label">Account successfully created. Please log in.</label>
 				  <br>
 				</div>
@@ -48,7 +50,7 @@
 			  case 'no':
 			  ?>
 
-				<div class="form-group row">
+				<div class="form-group row bg-secondary text-white"">
 				  <label style="font-size:1.5vw;margin-left: 50px;color: red;font-weight: bold;" class="control-label">Incorrect email or password. Please try again.</label>
 				  <br>
 				</div>
@@ -57,7 +59,7 @@
 			  case 'noaccount':
 			  ?>
 
-				<div class="form-group row">
+				<div class="form-group row bg-secondary text-white"">
 				  <label style="font-size:1.5vw;margin-left: 50px;color: red;font-weight: bold;" class="control-label">Please log in first as you are currently not logged in.</label>
 				  <br>
 				</div>
@@ -65,8 +67,7 @@
 				break;
 			}
 		  }
-	  ?>
-    </div>
+		?>
   </body>
   <footer>
 		<div class="Footer" id="Footer">

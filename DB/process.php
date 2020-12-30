@@ -4,11 +4,11 @@ require_once('main.php');
 if(!empty($_GET['action'])){
 	switch($_GET['action']){
 		case 'login':
-	       $email=$_POST['email'];
+	           $email=$_POST['email'];
 		   $password=$_POST['password'];
-	       $where['email']= '="'.$email.'"';
+	       	   $where=$email;
 		   $database=new Database();
-		   $user=$database->select_row("users","*",$where);
+		   $user=$database->select_row("users","*","email",$where);
 		   if($user['password']==$password){
 				session_start();
 				$_SESSION['username']=$user['FirstName'];

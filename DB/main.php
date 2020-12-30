@@ -36,6 +36,7 @@ class Database {
 		$query = "SELECT ".$columns." FROM ".$tablename." where ".$condition."='".$where."'";
 		$result = mysqli_query($connection, $query) or die ("DB error: $dbname");
 		close_connection($result_connection);
+		return $result;
 	}
 }
 ?>

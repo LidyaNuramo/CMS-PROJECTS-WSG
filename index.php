@@ -20,9 +20,7 @@
         <a class="nav-link" href="Guest Home">Log in as a Guest</a>
       </li>
     </ul>
-    <div class="p-3 mb-2 bg-secondary text-white">
-      <form action="DB/process.php?action=login" method="POST">
-		<?php
+	<?php
       if(!empty($_GET['action']))
       {
         switch($_GET['action'])
@@ -30,7 +28,6 @@
           case 'yes':?>
             <div class="form-group row">
               <label style="font-size:1.5vw;margin-left: 50px;color: green;font-weight: bold;" class="control-label">Account successfully created. Please log in.</label>
-              <br>
               <br>
             </div>
       <?php
@@ -41,7 +38,6 @@
             <div class="form-group row">
               <label style="font-size:1.5vw;margin-left: 50px;color: red;font-weight: bold;" class="control-label">Incorrect email or password. Please try again.</label>
               <br>
-              <br>
             </div>
             <?php
             break;
@@ -51,13 +47,14 @@
             <div class="form-group row">
               <label style="font-size:1.5vw;margin-left: 50px;color: red;font-weight: bold;" class="control-label">Please log in first as you are currently not logged in.</label>
               <br>
-              <br>
             </div>
             <?php
             break;
         }
       }
-      ?>
+    ?>
+	<div class="p-3 mb-2 bg-secondary text-white">
+      <form action="DB/process.php?action=login" method="POST">
         <div class="form-group">
           <label for="exampleInputEmail1">Email address</label>
           <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>

@@ -9,6 +9,7 @@
     <title>CMS Project - Lidya Nuramo</title>
   </head>
   <body>
+	  <h1> Hey there Bisa!!!</h1>
     <nav class="nav">
       <a class="nav-link active" aria-current="page" href="#">Lidya Nuramo CMS project</a>
     </nav>

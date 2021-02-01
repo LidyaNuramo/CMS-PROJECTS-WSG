@@ -50,16 +50,16 @@ if(!empty($_GET['action']))
 
 		  <div class="form-row" style="font-size: 14pt;margin-top: 30px;">
 			  <label for="name" style="font-size: 14pt;color: black;margin-left: 1%;margin-top: 5px;font-weight: bold;" class="col-sm-2 col-form-labels">First name:</label>
-			  <input type="name" class="form-control" id="InputName1" aria-describedby="nameHelp" placeholder="Enter First name" style="height: 40px;width: 350px;margin-left: 1%;" name="firstname" required>
+			  <input type="name" class="form-control" id="InputName1" aria-describedby="nameHelp" placeholder="Enter First name" style="height: 40px;width: 300px;margin-left: 1%;" name="firstname" required>
 			  <label for="Lastname" style="font-size: 14pt;color: black;margin-left: 1%;margin-top: 5px;font-weight: bold;" class="col-sm-2 col-form-labels">Last name:</label>
-			  <input type="Lastname" class="form-control" id="InputLastname" aria-describedby="LastnameHelp" placeholder="Enter Last name" style="height: 40px;width: 350px;margin-left: 1%;" name="lastname" required>
+			  <input type="Lastname" class="form-control" id="InputLastname" aria-describedby="LastnameHelp" placeholder="Enter Last name" style="height: 40px;width: 300px;margin-left: 1%;" name="lastname" required>
 		  </div>
 
 		  <div class="form-row" style="font-size: 14pt;margin-top: 30px;">
 			<label for="" style="font-size: 14pt;color: black;margin-left: 2%;margin-top: 5px;font-weight: bold;" class="col-sm-2 col-form-labels">Email address:</label>
-			<input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="Enter email" style="height: 40px;width: 750px;margin-left: 2%;" name="email" required>
+			<input type="email" class="form-control" id="InputEmail1" placeholder="Enter email" style="height: 40px;width: 750px;margin-left: 2%;" name="email" required>
 			<label for="" style="font-size: 14pt;color: black;margin-left: 2%;margin-top: 5px;font-weight: bold;" class="col-sm-2 col-form-labels">Phone:</label>
-			<input type="text" class="form-control bfh-phone" data-format="+48 (ddd) ddd-dddd" name="phone">
+			<input type="phone" class="form-control" id="InputPhone" placeholder="+48" style="height: 40px;width: 750px;margin-left: 2%;" name="phone" required>
 		  </div>
 
 		  <div class="form-row" style="font-size: 14pt;margin-top: 30px;">

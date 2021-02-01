@@ -33,15 +33,15 @@ if(!empty($_GET['action']))
 		<ul class="nav justify-content-end">
 		  <li class="nav-item">
 			<form class="form-inline my-2 my-lg-0" action="index.php">
-				<label style="font-size: 14pt;color: black;margin-right: 20px;">Already have an account?<button class="btn btn-outline-primary" type="submit" >Sign in</button>
+				<label style="font-size: 11pt;color: black;margin-right: 20px;"> Already have an account? </label><button class="btn btn-outline-primary" type="submit" >Sign in</button>
 			</form>
 		  </li>
 		  <li class="nav-item">
-			<a class="nav-link" href="Guest Home">Log in as a Guest</a>
+			<label style="font-size: 11pt;color: black;margin-right: 20px;"> Or </label><a class="nav-link" href="Guest Home">Log in as a Guest</a>
 		  </li>
 		</ul>
 
-		<form action="process.php?action=signup" method="POST" onSubmit="return(check_pass())" style="background: rgba(192,192,192, 0.7);padding-top:30px;margin-top: 100px;padding-bottom:60px;height: 100%;width: 90%;margin-left: 5%;">
+		<form action="/DB/process.php?action=signup" method="POST" onSubmit="return(check_pass())" style="background: rgba(192,192,192, 0.7);padding-top:30px;margin-top: 100px;padding-bottom:60px;height: 100%;width: 90%;margin-left: 5%;">
 		  <div class="form-row">
 			<label style="font-size: 4vw;color: black;margin-left: 60px;font-weight: bold;" class="control-label">Fill out the form to create an account</label>
 			<br>
@@ -49,10 +49,10 @@ if(!empty($_GET['action']))
 		  </div>
 
 		  <div class="form-row" style="font-size: 14pt;margin-top: 30px;">
-			  <label for="name" style="font-size: 14pt;color: black;margin-left: 2%;margin-top: 5px;font-weight: bold;" class="col-sm-2 col-form-labels">First name:</label>
-			  <input type="name" class="form-control" id="InputName1" aria-describedby="nameHelp" placeholder="Enter First name" style="height: 40px;width: 350px;margin-left: 2%;" name="firstname" required>
-			  <label for="Lastname" style="font-size: 14pt;color: black;margin-left: 2%;margin-top: 5px;font-weight: bold;" class="col-sm-2 col-form-labels">Last name:</label>
-			  <input type="Lastname" class="form-control" id="InputLastname" aria-describedby="LastnameHelp" placeholder="Enter Last name" style="height: 40px;width: 350px;margin-left: 2%;" name="lastname" required>
+			  <label for="name" style="font-size: 14pt;color: black;margin-left: 1%;margin-top: 5px;font-weight: bold;" class="col-sm-2 col-form-labels">First name:</label>
+			  <input type="name" class="form-control" id="InputName1" aria-describedby="nameHelp" placeholder="Enter First name" style="height: 40px;width: 350px;margin-left: 1%;" name="firstname" required>
+			  <label for="Lastname" style="font-size: 14pt;color: black;margin-left: 1%;margin-top: 5px;font-weight: bold;" class="col-sm-2 col-form-labels">Last name:</label>
+			  <input type="Lastname" class="form-control" id="InputLastname" aria-describedby="LastnameHelp" placeholder="Enter Last name" style="height: 40px;width: 350px;margin-left: 1%;" name="lastname" required>
 		  </div>
 
 		  <div class="form-row" style="font-size: 14pt;margin-top: 30px;">

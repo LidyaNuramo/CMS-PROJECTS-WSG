@@ -59,7 +59,7 @@ if(!empty($_GET['action']))
 			<label for="" style="font-size: 14pt;color: black;margin-left: 2%;margin-top: 5px;font-weight: bold;" class="col-sm-2 col-form-labels">Email address:</label>
 			<input type="email" class="form-control" id="InputEmail1" placeholder="Enter email" style="height: 40px;width: 750px;margin-left: 2%;" name="email" required>
 			<label for="" style="font-size: 14pt;color: black;margin-left: 2%;margin-top: 5px;font-weight: bold;" class="col-sm-2 col-form-labels">Phone:</label>
-			<input type="phone" class="form-control" id="InputPhone" placeholder="+48" style="height: 40px;width: 750px;margin-left: 2%;" name="phone" required>
+			<input type="number_format" class="form-control" id="InputPhone" placeholder="+48" style="height: 40px;width: 750px;margin-left: 2%;" name="phone" required>
 		  </div>
 
 		  <div class="form-row" style="font-size: 14pt;margin-top: 30px;">

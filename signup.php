@@ -41,7 +41,7 @@ if(!empty($_GET['action']))
 		  </li>
 		</ul>
 
-		<form action="/DB/process.php?action=signup" method="POST" onSubmit="return(check_pass())" style="background: rgba(192,192,192, 0.7);padding-top:30px;margin-top: 100px;padding-bottom:60px;height: 100%;width: 90%;margin-left: 5%;">
+		<form class="form-group row" action="/DB/process.php?action=signup" method="POST" onSubmit="return(check_pass())" style="background: rgba(192,192,192, 0.7);padding-top:30px;margin-top: 100px;padding-bottom:60px;height: 100%;width: 90%;margin-left: 5%;">
 		  <div class="form-row">
 			<label style="font-size: 4vw;color: black;margin-left: 60px;font-weight: bold;" class="control-label">Fill out the form to create an account</label>
 			<br>
@@ -59,7 +59,7 @@ if(!empty($_GET['action']))
 			<label for="" style="font-size: 14pt;color: black;margin-left: 2%;margin-top: 5px;font-weight: bold;" class="col-sm-2 col-form-labels">Email address:</label>
 			<input type="email" class="form-control" id="InputEmail1" placeholder="Enter email" style="height: 40px;width: 750px;margin-left: 2%;" name="email" required>
 			<label for="" style="font-size: 14pt;color: black;margin-left: 2%;margin-top: 5px;font-weight: bold;" class="col-sm-2 col-form-labels">Phone:</label>
-			<input type="number_format" class="form-control" id="InputPhone" placeholder="+48" style="height: 40px;width: 750px;margin-left: 2%;" name="phone" required>
+			<input class="form-control form-control-sm" type="text" placeholder="+48" name="phone">
 		  </div>
 
 		  <div class="form-row" style="font-size: 14pt;margin-top: 30px;">

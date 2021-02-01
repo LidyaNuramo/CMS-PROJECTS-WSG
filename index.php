@@ -18,7 +18,7 @@
 		</nav>
 		<ul class="nav justify-content-end">
 		  <li class="nav-item">
-			<a class="nav-link" href="#">Create an account</a>
+			<a class="nav-link" href="signup.php">Create an account</a>
 		  </li>
 		  <li class="nav-item">
 			<a class="nav-link" href="Guest Home">Log in as a Guest</a>

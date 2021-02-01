@@ -28,16 +28,18 @@ if(!empty($_GET['action']))
 	<body background="images/signup.jpg" style="background-size: 100%100%;"> 
   
 		<nav class="nav text-light bg-dark">
-		  <a class="nav-link active" aria-current="page" href="#">Lidya Nuramo CMS project</a>
+		  <a class="nav-link active" aria-current="page" href="index.php">Lidya Nuramo CMS project</a>
 		</nav>
 		<ul class="nav justify-content-end">
 		  <li class="nav-item">
 			<form class="form-inline my-2 my-lg-0" action="index.php">
-				<label style="font-size: 11pt;color: black;margin-right: 20px;"> Already have an account? </label><button class="btn btn-outline-primary" type="submit" >Sign in</button>
+				<label style="font-size: 11pt;color: black;margin-right: 30px;"> Already have an account? </label><button class="btn btn-outline-primary" type="submit" >Sign in</button>
 			</form>
 		  </li>
 		  <li class="nav-item">
-			<label style="font-size: 11pt;color: black;margin-right: 20px;"> Or </label><a class="nav-link" href="Guest Home">Log in as a Guest</a>
+			<form class="form-inline my-2 my-lg-0" action="Guest Home">
+				<label style="font-size: 11pt;color: black;margin-right: 30px;"> Or </label><button class="btn btn-outline-primary" type="submit" >Log in as a Guest</button>
+			</form>
 		  </li>
 		</ul>
 
@@ -49,17 +51,17 @@ if(!empty($_GET['action']))
 		  </div>
 
 		  <div class="form-row" style="font-size: 14pt;margin-top: 30px;">
-			  <label for="name" style="font-size: 14pt;color: black;margin-left: 1%;margin-top: 5px;font-weight: bold;" class="col-sm-2 col-form-labels">First name:
-			  <input type="name" class="form-control" id="InputName1" aria-describedby="nameHelp" placeholder="Enter First name" style="height: 40px;width: 300px;margin-left: 1%;" name="firstname" required></label>
-			  <label for="Lastname" style="font-size: 14pt;color: black;margin-left: 1%;margin-top: 5px;font-weight: bold;" class="col-sm-2 col-form-labels">Last name:
-			  <input type="Lastname" class="form-control" id="InputLastname" aria-describedby="LastnameHelp" placeholder="Enter Last name" style="height: 40px;width: 300px;margin-left: 1%;" name="lastname" required></label>
+			  <label for="name" style="font-size: 14pt;color: black;margin-left: 2%;margin-top: 5px;font-weight: bold;" class="col-sm-2 col-form-labels">First name:
+			  <input type="name" class="form-control" id="InputName1" aria-describedby="nameHelp" placeholder="Enter First name" style="height: 40px;width: 300px;margin-left: 2%;" name="firstname" required></label>
+			  <label for="Lastname" style="font-size: 14pt;color: black;margin-left: 2%;margin-top: 5px;font-weight: bold;" class="col-sm-2 col-form-labels">Last name:
+			  <input type="Lastname" class="form-control" id="InputLastname" aria-describedby="LastnameHelp" placeholder="Enter Last name" style="height: 40px;width: 300px;margin-left: 2%;" name="lastname" required></label>
 		  </div>
 
 		  <div class="form-row" style="font-size: 14pt;margin-top: 30px;">
-			<label for="" style="font-size: 14pt;color: black;margin-left: 2%;margin-top: 5px;font-weight: bold;" class="col-sm-2 col-form-labels">Email address:</label>
-			<input type="email" class="form-control" id="InputEmail1" placeholder="Enter email" style="height: 40px;width: 750px;margin-left: 2%;" name="email" required>
-			<label for="" style="font-size: 14pt;color: black;margin-left: 2%;margin-top: 5px;font-weight: bold;" class="col-sm-2 col-form-labels">Phone:</label>
-			<input class="form-control form-control-sm" type="text" placeholder="+48" style="height: 40px;width: 750px;margin-left: 2%;" name="phone">
+			<label for="" style="font-size: 14pt;color: black;margin-left: 2%;margin-top: 5px;font-weight: bold;" class="col-sm-2 col-form-labels">Email address:
+			<input type="email" class="form-control" id="InputEmail1" placeholder="Enter email" style="height: 40px;width: 750px;margin-left: 2%;" name="email" required></label>
+			<label for="" style="font-size: 14pt;color: black;margin-left: 2%;margin-top: 5px;font-weight: bold;" class="col-sm-2 col-form-labels">Phone:
+			<input class="form-control form-control-sm" type="text" placeholder="+48" style="height: 40px;width: 750px;margin-left: 2%;" name="phone"></label>
 		  </div>
 
 		  <div class="form-row" style="font-size: 14pt;margin-top: 30px;">

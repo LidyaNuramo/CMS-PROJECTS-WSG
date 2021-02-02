@@ -6,7 +6,7 @@
 ?>
 		<meta http-equiv="refresh" content="10" />
 		<div class="row">
-            <div class="col-sm-12" style="margin-left:2%; margin-top: 100px; padding-bottom: 100 px;">
+            <div class="col-sm-12" style="margin-left:2%; margin-top: 100px; margin-bottom: 100 px;">
                 <table class="table table-striped" border="5">
                 <thead>
                     <tr class="thead-dark" style="font-size: 18pt;max-width:70%;white-space:nowrap;">
@@ -37,11 +37,11 @@
 						$duration = $result['totaldowntime'];
 						$durationmin = 0;
 						$durationsec = 0;
-						$fp = @fsockopen($address, $port, $errno, $errstr, 10);
+						$fp = @fsockopen($address, $port, $errno, $errstr, 7);
 						if ($fp) { 
 							$status ='OK'; 
 							if ($failedtime != "0"){
-								$failedtime = 0;
+								$failedtime = NULL;
 							}
 						} 
 						else 
@@ -50,7 +50,7 @@
 							$attempts = $attempts + 1;
 							date_default_timezone_set("Europe/Warsaw"); 
 							$time = date("h:i:sa");
-							if ($failedtime == "0"){
+							if ($failedtime == NULL){
 								$failedtime = $time;
 							}
 							//$duration = ($errno)*10;

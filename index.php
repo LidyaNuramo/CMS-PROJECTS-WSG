@@ -60,6 +60,11 @@
 	
 		<div class="p-3 mb-2 bg-secondary text-white">
 			<form class="form-group row" action="DB/process.php?action=login" method="POST" style="background: rgba(192,192,192, 0.7);padding-top:30px;margin-top: 100px;padding-bottom:30px;height: 100%;width: 70%;margin-left: 15%;margin-bottom:100px;">
+				<div class="form-row">
+					<label style="font-size: 2vw;color: white;margin-left: 60px;font-weight: bold;" class="control-label">Log into your account</label>
+					<br>
+					<br>
+				</div>
 				<div class="form-row" style="font-size: 14pt;margin-top: 30px;">
 					<label for="exampleInputEmail1" style="font-size: 14pt;color: white;margin-left: 2%;margin-top: 5px;font-weight: bold;" class="col-sm-2 col-form-labels">Email address:</label>
 					<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" style="height: 40px;width: 700px;margin-left: 2%;" name="email" required>
@@ -69,7 +74,7 @@
 					<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" style="height: 40px;width: 700px;margin-left: 2%;" name="password" required>
 				</div>
 				<br>
-				<button type="submit" class="btn btn-primary" style="margin-top: 20 px; align: right;width: 150px;">Submit</button>
+				<button type="submit" class="btn btn-primary" style="margin-top: 20 px; width: 150px;margin-left: 30px;">Submit</button>
 			</form>
 		</div>
 	</body>

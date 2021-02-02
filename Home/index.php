@@ -37,9 +37,9 @@ include('header.php');
 						</figcaption>                    
 					</figure>
 				</div>
-				<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5" style="width: 200 px; hight: 15 px;">
+				<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
 					<figure class="effect-ming tm-video-item">
-						<img src="../Image/ex4.jpg" alt="Image" class="img-fluid">
+						<img src="../Image/ex4.jpg" alt="Image" class="img-fluid" style="width: 200 px; hight: 15 px;">
 						<figcaption class="d-flex align-items-center justify-content-center">
 							<h2>Exercise 4</h2>
 							<a href="#">View more</a>

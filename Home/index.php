@@ -91,6 +91,6 @@
 <?php
 }
 else{
-    header("Location: index.php?action=noaccount");
+    header("Location: ../index.php?action=noaccount");
 }
 ?>

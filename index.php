@@ -8,8 +8,8 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- Bootstrap CSS -->
-		<link rel="shortcut icon" type="Image/x-icon" href="Image/logo2.ico">
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+		<link rel="shortcut icon" type="Image/x-icon" href="Image/Logo.ico">
 		<title>Lidya Nuramo - CMS Project </title>
 	</head>
 	
@@ -20,9 +20,6 @@
 		<ul class="nav justify-content-end">
 		  <li class="nav-item">
 			<a class="nav-link" href="signup.php">Create an account</a>
-		  </li>
-		  <li class="nav-item">
-			<a class="nav-link" href="Guest Home">Log in as a Guest</a>
 		  </li>
 		</ul>
 		<?php

@@ -9,6 +9,9 @@
 		<!-- Bootstrap CSS -->
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="CSS/index.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<script src='https://kit.fontawesome.com/a076d05399.js'></script>
 		<title>Lidya Nuramo - CMS Project </title>
   </head>
 
@@ -39,8 +42,6 @@
                 Account
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="profile.php">Change password</a>
-                <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="process.php?action=logout">Log Out</a>
               </div>
             </li>
@@ -48,16 +49,6 @@
               <a class="nav-link" href="about.php">About</a>
             </li>
           </ul>
-          <form class="form-inline my-2 my-lg-0" action="search.php" method="POST">
-            <font color="black" size="3">Keyword: </font>
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id='search' name="Keyword" required>
-            <font color="black" size="3">Type: </font>
-            <select class="form-control" id="exampleFormControlSelect1" name="type" required>
-              <option value="Name" >Name</option>
-              <option value="CityName" >City</option>
-            </select>
-            <input type="submit" class="btn btn-outline-primary" name="submit" value="Search">
-          </form>
         </div>
       </nav>
     </section> 

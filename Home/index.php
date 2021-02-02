@@ -51,12 +51,12 @@ if(isset($_SESSION['username'])){
 				</div>
 			  </li>
 			  <?php
-				if 
-				{?>
+				if ($_SESSION['username'] == "admin")
+				{ ?>
 				<li class="nav-item">
 					<a class="nav-link" href="../phpmyadmin/" target="_blank">Database</a>
 				  </li>
-				<?php}
+				<?php }
 			  ?>
 			  <li class="nav-item">
 				<a class="nav-link" href="../DB/process.php?action=logout">Logout</a>

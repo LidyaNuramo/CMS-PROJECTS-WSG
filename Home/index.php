@@ -55,7 +55,10 @@ if(isset($_SESSION['username'])){
 				{ ?>
 				<li class="nav-item">
 					<a class="nav-link" href="../phpmyadmin/" target="_blank">Database</a>
-				  </li>
+				 </li>
+				 <li class="nav-item">
+					<a class="nav-link" href="#" target="_blank">Create accounts</a>
+				 </li>
 				<?php }
 			  ?>
 			  <li class="nav-item">

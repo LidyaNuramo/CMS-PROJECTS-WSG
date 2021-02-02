@@ -9,7 +9,7 @@
             <div class="col-sm-12" style="margin-left:2%; margin-top: 100px; margin-bottom: 100 px;">
                 <table class="table table-striped" border="5">
                 <thead>
-                    <tr class="thead-dark" style="font-size: 18pt;max-width:70%;white-space:nowrap;">
+                    <tr class="thead-dark" style="font-size: 16pt;max-width:70%;white-space:nowrap;">
                         <th scope="col">#</th>
                         <th scope="col">Address</th>
                         <th scope="col">Port</th>

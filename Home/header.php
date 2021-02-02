@@ -19,6 +19,9 @@ if(isset($_SESSION['username'])){
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="css/index.css">
 		<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+		<link rel="stylesheet" href="../CSS/bootstrap.min.css">
+		<link rel="stylesheet" href="../CSS/all.min.css">
+		<link rel="stylesheet" href="../CSS/templatemo-style.css">
 		<title>Lidya Nuramo - CMS Project </title>
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 		  <a class="navbar-brand" href="#">Lidya Nuramo CMS project</a>
@@ -67,6 +70,14 @@ if(isset($_SESSION['username'])){
 		
 	</head>
 	<body style="background: url(../Image/bg2.png) no-repeat center center fixed; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;"> 
+		<!div class="tm-hero d-flex justify-content-center align-items-center" data-parallax="scroll" data-image-src="../Image/bg2.jpg">
+			<form class="d-flex tm-search-form">
+				<input class="form-control tm-search-input" type="search" placeholder="Search" aria-label="Search">
+				<button class="btn btn-outline-success tm-search-btn" type="submit">
+					<i class="fas fa-search"></i>
+				</button>
+			</form>
+		</div>
 <?php
 }
 else{

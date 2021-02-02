@@ -11,10 +11,10 @@ if(!empty($_GET['action'])){
 		   $user=$database->getRow("users","*",$where);
 		   if($user['password']==$password){
 				session_start();
-				$_SESSION['username']=$user['FirstName'];
-				$_SESSION['lastname']=$user['LastName'];
-				$_SESSION['userID']=$user['ID'];
-				$_SESSION['AccountType']=$user['AccountType'];
+				$_SESSION['username']=$user['firstname'];
+				$_SESSION['lastname']=$user['lastname'];
+				$_SESSION['userID']=$user['id'];
+				$_SESSION['AccountType']=$user['accounttype'];
 				header('Location:../Home');
 				break;
 		   }

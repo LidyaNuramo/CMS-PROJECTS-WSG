@@ -28,11 +28,8 @@ if(isset($_SESSION['username'])){
 
 		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav mr-auto">
-			  <li class="nav-item active">
-				<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-			  </li>
 			  <li class="nav-item">
-				<a class="nav-link" href="#">Add</a>
+				<a class="nav-link" href="">Home</a>
 			  </li>
 			  <li class="nav-item dropdown">
 				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -43,6 +40,7 @@ if(isset($_SESSION['username'])){
 				  <a class="dropdown-item" href="../Exercise2">Exercise 2</a>
 				  <div class="dropdown-divider"></div>
 				  <a class="dropdown-item" href="../Exercise3">Exercise 3</a>
+				  <a class="dropdown-item" href="#">Exercise 4</a>
 				</div>
 			  </li>
 			  <?php

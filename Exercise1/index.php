@@ -1,7 +1,7 @@
 <?php
     include '../DB/main.php';
 	include('../DB/process.php');
-	include('header.php');
+	include('../header.php');
 		$database= new Database();
 		$where['id']="";
 		$results=$database->getRows("hosts","*",$where);
@@ -33,5 +33,5 @@
 			print "<TR><TD>$id</TD><TD>$address</TD><TD>$port</TD><TD>$status</TD><TD>$errno</TD><TD>$time</TD><TD>$durationmin min $durationsec sec </TD></TR>\n";
 		}
 		print "</TABLE>";
-	include('footer.php');
+	include('../footer.php');
 ?>

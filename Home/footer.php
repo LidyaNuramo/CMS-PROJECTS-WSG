@@ -21,9 +21,9 @@
 							<li class="mb-2"><a href="https://instagram.com"><i class="fab fa-instagram"></i></a></li>
 							<li class="mb-2"><a href="https://pinterest.com"><i class="fab fa-pinterest"></i></a></li>
 						</ul>
-						<div class="col-lg-8 col-md-7 col-12 px-5 mb-3">
+						<ul class="tm-social-links d-flex justify-content-end pl-0 mb-5">
 							© 2021 Lidya Nuramo. All rights reserved.
-						</div>
+						</ul>
 					</div>
 				</div>
 			</div>

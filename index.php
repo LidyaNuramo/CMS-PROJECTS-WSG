@@ -12,7 +12,7 @@
 		<title>Lidya Nuramo - CMS Project </title>
 	</head>
 	
-	<body style="background-image: url('Image/wp3512151.jpg'); background-repeat:no-repeat; background-size: background-size: 100%100%;">
+	<body style="background-image: url('Image/wp3512151.jpg'); background-repeat:no-repeat; background-size: background-size: 100%100vh;">
 		<nav class="nav text-light bg-dark">
 		  <a class="nav-link active" aria-current="page" href="#">Lidya Nuramo CMS project</a>
 		</nav>

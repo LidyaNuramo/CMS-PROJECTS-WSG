@@ -34,7 +34,7 @@ if(!empty($_GET['action']))
 		<ul class="nav justify-content-end">
 		  <li class="nav-item">
 			<form class="form-inline my-2 my-lg-0" action="index.php">
-				<label style="font-size: 11pt;color: black;margin-top:25px;color: white;margin-right: 10px;"> Already have an account? </label><button class="btn btn-outline-primary" type="submit" style="margin-top:2px; margin-left: 20 px;">Sign in</button>
+				<label style="font-size: 11pt;color: black;margin-top:25px;color: white;margin-right: 10px;"> Already have an account? </label><button class="btn btn-outline-primary" type="submit" style="margin-top:2px; margin-right: 20 px;">Sign in</button>
 			</form>
 		  </li>
 		</ul>

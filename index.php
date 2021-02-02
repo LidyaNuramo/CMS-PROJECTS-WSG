@@ -59,7 +59,7 @@
 		?>
 	
 		<div class="p-3 mb-2 text-white">
-			<form class="form-group row" action="DB/process.php?action=login" method="POST" style="background: rgba(192,192,192, 0.7);padding-top:30px;margin-top: 100px;padding-bottom:30px;height: 100%;width: 75%;margin-left: 15%;margin-bottom:100px;">
+			<form class="form-group row" action="DB/process.php?action=login" method="POST" style="background: rgba(192,192,192, 0.7);padding-top:30px;margin-top: 100px;padding-bottom:30px;height: 100%;width: 75%;margin-bottom:100px;">
 				<div class="form-row">
 					<label style="font-size: 18pt;color: white;margin-left: 7%;font-weight: bold;" class="control-label">Log into your account</label>
 				</div>

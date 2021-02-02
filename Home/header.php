@@ -52,7 +52,7 @@ if(isset($_SESSION['username'])){
 					<a class="nav-link" href="../phpmyadmin/" target="_blank">Database</a>
 				 </li>
 				 <li class="nav-item">
-					<a class="nav-link" href="#" target="_blank">Create accounts</a>
+					<a class="nav-link" href="#" target="_blank">User accounts</a>
 				 </li>
 				<?php }
 			  ?>
@@ -68,9 +68,4 @@ if(isset($_SESSION['username'])){
 		</nav>
 		
 	</head>
-<?php
-}
-else{
-    header("Location: ../index.php?action=noaccount");
-}
-?>
+	<body style="background: url(../Image/bg2.png) no-repeat center center fixed; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;"> 

@@ -18,7 +18,7 @@ if(isset($_SESSION['username'])){
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="css/index.css">
 		<script src='https://kit.fontawesome.com/a076d05399.js'></script>
-		<link rel="shortcut icon" type="../Image/x-icon" href="Image/Logo.ico">
+		<link rel="shortcut icon" type="../Image/x-icon" href="Image/logo.ico">
 		<title>Lidya Nuramo - CMS Project </title>
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 		  <a class="navbar-brand" href="#">Lidya Nuramo CMS project</a>

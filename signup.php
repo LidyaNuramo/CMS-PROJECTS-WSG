@@ -33,12 +33,12 @@ if(!empty($_GET['action']))
 		<ul class="nav justify-content-end">
 		  <li class="nav-item">
 			<form class="form-inline my-2 my-lg-0" action="index.php">
-				<label style="font-size: 11pt;color: black;margin-top:25px;color: white;margin-right: 10px;"> Already have an account? </label><button class="btn btn-outline-primary" type="submit" style="margin-top:5px;">Sign in</button>
+				<label style="font-size: 11pt;color: black;margin-top:25px;color: white;margin-right: 10px;"> Already have an account? </label><button class="btn btn-outline-primary" type="submit" style="margin-top:2px;">Sign in</button>
 			</form>
 		  </li>
 		  <li class="nav-item">
 			<form class="form-inline my-2 my-lg-0" action="Guest Home">
-				<label style="font-size: 11pt;color: black;margin-left: 10px;margin-right: 10px;margin-top:25px;color: white;"> Or </label><button class="btn btn-outline-primary" type="submit" style="margin-top:10px;margin-right:5px;">Log in as a Guest</button>
+				<label style="font-size: 11pt;color: black;margin-left: 10px;margin-right: 10px;margin-top:25px;color: white;"> Or </label><button class="btn btn-outline-primary" type="submit" style="margin-top:10px;margin-right:2px;">Log in as a Guest</button>
 			</form>
 		  </li>
 		</ul>
@@ -72,7 +72,7 @@ if(!empty($_GET['action']))
 		  </div>
 
 		  <div class="form-row">
-			<button type="submit" class="btn btn-primary" style="position: right;margin-top: 40px;margin-left: 65%;width: 25%;font-size:2vw;font-weight: bold;" id="submit">Register account</button>
+			<button type="submit" class="btn btn-primary" style="position: right;margin-top: 40px;margin-left: 65%;width: 20%;font-size:1,5vw;font-weight: bold;" id="submit">Register account</button>
 		  </div>
 		</form>
 		

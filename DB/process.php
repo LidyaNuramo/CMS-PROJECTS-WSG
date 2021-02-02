@@ -64,6 +64,13 @@ if(!empty($_GET['action'])){
 				header('Location: ../index.php');
 			}
 			break;
+		case 'deleteHost':
+			$id=$_GET['id'];
+			$where['id']= '='.$id;
+			$database=new Database();
+			$database->removeRows("hosts",$where);
+			header('Location: ../Exercise1');
+			break;
    }
 }
 ?>

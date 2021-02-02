@@ -61,12 +61,12 @@
 		<div class="p-3 mb-2 bg-secondary text-white">
 			<form class="form-group row" action="DB/process.php?action=login" method="POST" style="background: rgba(192,192,192, 0.7);padding-top:30px;margin-top: 100px;padding-bottom:60px;height: 100%;width: 90%;margin-left: 5%;">
 				<div class="form-row" style="font-size: 14pt;margin-top: 30px;">
-					<label for="exampleInputEmail1" style="font-size: 14pt;color: black;margin-left: 2%;margin-top: 5px;font-weight: bold;" class="col-sm-2 col-form-labels">Email address:</label>
-					<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" style="height: 40px;width: 600px;" name="email" required>
+					<label for="exampleInputEmail1" style="font-size: 14pt;color: white;margin-left: 2%;margin-top: 5px;font-weight: bold;" class="col-sm-2 col-form-labels">Email address:</label>
+					<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" style="height: 40px;width: 700px;margin-left: 2%;" name="email" required>
 				</div>
-				<div class="form-group">
-				  <label for="exampleInputPassword1">Password</label>
-				  <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+				<div class="form-row" style="font-size: 14pt;margin-top: 30px;">
+					<label for="exampleInputPassword1" style="font-size: 14pt;color: white;margin-left: 2%;margin-top: 5px;font-weight: bold;" class="col-sm-2 col-form-labels">Password:
+					<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" style="height: 40px;width: 350px;" name="password" required></label>
 				</div>
 				<br>
 				<button type="submit" class="btn btn-primary">Submit</button>

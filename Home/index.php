@@ -17,5 +17,5 @@ include('header.php');
 			</div>
 		</div>
 <?php
-	include('header.php');
+	include('footer.php');
 ?>

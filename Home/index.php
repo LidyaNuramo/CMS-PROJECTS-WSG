@@ -3,19 +3,6 @@ include('../DB/process.php');
 include('header.php');
 ?> 
 		
-		<link rel="stylesheet" href="../CSS/bootstrap.min.css">
-		<link rel="stylesheet" href="../CSS/all.min.css">
-		<link rel="stylesheet" href="../CSS/templatemo-style.css">
-		
-		<!--div class="tm-hero d-flex justify-content-center align-items-center" data-parallax="scroll" data-image-src="img/hero.jpg">
-			<form class="d-flex tm-search-form">
-				<input class="form-control tm-search-input" type="search" placeholder="Search" aria-label="Search">
-				<button class="btn btn-outline-success tm-search-btn" type="submit">
-					<i class="fas fa-search"></i>
-				</button>
-			</form>
-		</div-->
-		
 		<div class="container-fluid tm-container-content tm-mt-60">
 			<div class="row mb-4">
 				<h2 class="col-6 tm-text-primary" style="color: white;">

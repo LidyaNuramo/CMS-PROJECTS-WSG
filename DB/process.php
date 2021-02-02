@@ -18,7 +18,7 @@ if(!empty($_GET['action'])){
 				break;
 		   }
 		   else{
-				header('Location:../index.php?action=no');
+				header("Location: '../index.php?action=no'");
 		   }
 		   break;
 		case 'signup':
@@ -50,7 +50,7 @@ if(!empty($_GET['action'])){
 				header($rr);
 				break;
 			}
-			$rr="Location: signup.php?action=no";
+			$rr="Location: '../signup.php?action=no'";
 			header($rr);
 			break;
    }

@@ -37,7 +37,7 @@ if(!empty($_GET['action'])){
 			}
 			if ($num==1){
 				$data=array(
-					"userID"=>null,
+					"ID"=>null,
 					"FirstName"=>$fname,
 					"LastName"=>$lname,
 					"AccountType"=>"standard",

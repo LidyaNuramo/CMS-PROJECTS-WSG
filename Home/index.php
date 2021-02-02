@@ -50,6 +50,14 @@ if(isset($_SESSION['username'])){
 				  <a class="dropdown-item" href="../Exercise3">Exercise 3</a>
 				</div>
 			  </li>
+			  <?php
+				if 
+				{?>
+				<li class="nav-item">
+					<a class="nav-link" href="../phpmyadmin/" target="_blank">Database</a>
+				  </li>
+				<?php}
+			  ?>
 			  <li class="nav-item">
 				<a class="nav-link" href="../DB/process.php?action=logout">Logout</a>
 			  </li>

@@ -10,7 +10,7 @@ include('header.php');
 				</h2>
 			</div>
 			<div class="row tm-mb-90 tm-gallery">
-				<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+				<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5" style="width: 200 px; hight: 15 px;">
 					<figure class="effect-ming tm-video-item">
 						<img src="../Image/ex1.png" alt="Image" class="img-fluid">
 						<figcaption class="d-flex align-items-center justify-content-center">

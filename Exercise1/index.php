@@ -6,7 +6,7 @@
 ?>
 		<meta http-equiv="refresh" content="10" />
 		<div class="row">
-            <div class="col-sm-12" style="margin-left:10%;">
+            <div class="col-sm-12" style="margin-left:2%; margin-top: 30px; margin-bottom: 30 px;">
                 <table class="table table-striped" border="5">
                 <thead>
                     <tr class="thead-dark" style="font-size: 20pt;max-width:70%;white-space:nowrap;">
@@ -17,7 +17,7 @@
                         <th scope="col">Number of failed connection attempts</th>
                         <th scope="col">Connection loss time </th>
                         <th scope="col">Total down time</th>
-                        <th scope="col">Options</th>
+                        <th scope="col">Action</th>
                     </tr>
                 </thead>
                 <tbody style="font-size: 12pt;color: black;font-weight: bold;background: rgba(192,192,192, 0.7)">
@@ -37,7 +37,7 @@
 						$duration = $result['failedtime'];
 						$durationmin = 0;
 						$durationsec = 0;
-						$fp = @fsockopen($address, $port, $errno, $errstr, 30);
+						$fp = @fsockopen($address, $port, $errno, $errstr, 10);
 						if ($fp) { $status ='OK'; } 
 						else 
 						{ 

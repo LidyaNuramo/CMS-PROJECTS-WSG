@@ -33,12 +33,12 @@ if(!empty($_GET['action']))
 		<ul class="nav justify-content-end">
 		  <li class="nav-item">
 			<form class="form-inline my-2 my-lg-0" action="index.php">
-				<label style="font-size: 11pt;color: black;margin-right: 50px;margin-top:10px;"> Already have an account? </label><button class="btn btn-outline-primary" type="submit" style="margin-top:10px;">Sign in</button>
+				<label style="font-size: 11pt;color: black;margin-right: 30px;margin-top:20px;"> Already have an account? </label><button class="btn btn-outline-primary" type="submit" style="margin-top:10px;">Sign in</button>
 			</form>
 		  </li>
 		  <li class="nav-item">
 			<form class="form-inline my-2 my-lg-0" action="Guest Home">
-				<label style="font-size: 11pt;color: black;margin-left: 10px;margin-right: 10px;margin-top:10px;"> Or </label><button class="btn btn-outline-primary" type="submit" style="margin-top:10px;">Log in as a Guest</button>
+				<label style="font-size: 11pt;color: black;margin-left: 10px;margin-right: 10px;margin-top:20px;"> Or </label><button class="btn btn-outline-primary" type="submit" style="margin-top:10px;">Log in as a Guest</button>
 			</form>
 		  </li>
 		</ul>
@@ -59,9 +59,9 @@ if(!empty($_GET['action']))
 
 		  <div class="form-row" style="font-size: 14pt;margin-top: 30px;">
 			<label for="" style="font-size: 14pt;color: black;margin-left: 2%;margin-top: 5px;font-weight: bold;" class="col-sm-2 col-form-labels">Email address:
-			<input type="email" class="form-control" id="InputEmail1" placeholder="Enter email" style="height: 40px;width: 750px;margin-left: 2%;" name="email" required></label>
-			<label for="" style="font-size: 14pt;color: black;margin-left: 2%;margin-top: 5px;font-weight: bold;" class="col-sm-2 col-form-labels">Phone:
-			<input class="form-control form-control-sm" type="text" placeholder="+48" style="height: 40px;width: 750px;margin-left: 2%;" name="phone"></label>
+			<input type="email" class="form-control" id="InputEmail1" placeholder="Enter email" style="height: 40px;width: 400px;" name="email" required></label>
+			<label for="" style="font-size: 14pt;color: black;margin-left: 20%;margin-top: 5px;font-weight: bold;" class="col-sm-2 col-form-labels">Phone:
+			<input class="form-control form-control-sm" type="text" placeholder="+48" style="height: 40px;width: 300px;" name="phone"></label>
 		  </div>
 
 		  <div class="form-row" style="font-size: 14pt;margin-top: 30px;">

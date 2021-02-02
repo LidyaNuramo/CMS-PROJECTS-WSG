@@ -33,12 +33,12 @@ if(!empty($_GET['action']))
 		<ul class="nav justify-content-end">
 		  <li class="nav-item">
 			<form class="form-inline my-2 my-lg-0" action="index.php">
-				<label style="font-size: 11pt;color: black;margin-top:25px;color: white;margin-right: 10px;"> Already have an account? </label><button class="btn btn-outline-primary" type="submit" style="margin-top:7px;">Sign in</button>
+				<label style="font-size: 11pt;color: black;margin-top:25px;color: white;margin-right: 10px;"> Already have an account? </label><button class="btn btn-outline-primary" type="submit" style="margin-top:5px;">Sign in</button>
 			</form>
 		  </li>
 		  <li class="nav-item">
 			<form class="form-inline my-2 my-lg-0" action="Guest Home">
-				<label style="font-size: 11pt;color: black;margin-left: 10px;margin-right: 10px;margin-top:25px;color: white;"> Or </label><button class="btn btn-outline-primary" type="submit" style="margin-top:10px;margin-right:7px;">Log in as a Guest</button>
+				<label style="font-size: 11pt;color: black;margin-left: 10px;margin-right: 10px;margin-top:25px;color: white;"> Or </label><button class="btn btn-outline-primary" type="submit" style="margin-top:10px;margin-right:5px;">Log in as a Guest</button>
 			</form>
 		  </li>
 		</ul>
@@ -52,23 +52,23 @@ if(!empty($_GET['action']))
 
 		  <div class="form-row" style="font-size: 14pt;margin-top: 30px;">
 			  <label for="name" style="font-size: 14pt;color: black;margin-left: 2%;margin-top: 5px;font-weight: bold;" class="col-sm-2 col-form-labels">First name:
-			  <input type="name" class="form-control" id="InputName1" aria-describedby="nameHelp" placeholder="Enter First name" style="height: 40px;width: 70%;margin-left: 2%;" name="firstname" required></label>
+			  <input type="name" class="form-control" id="InputName1" aria-describedby="nameHelp" placeholder="Enter First name" style="height: 40px;width: 120%;margin-left: 2%;" name="firstname" required></label>
 			  <label for="Lastname" style="font-size: 14pt;color: black;margin-left: 20%;margin-top: 5px;font-weight: bold;" class="col-sm-2 col-form-labels">Last name:
-			  <input type="Lastname" class="form-control" id="InputLastname" aria-describedby="LastnameHelp" placeholder="Enter Last name" style="height: 40px;width: 70%;" name="lastname" required></label>
+			  <input type="Lastname" class="form-control" id="InputLastname" aria-describedby="LastnameHelp" placeholder="Enter Last name" style="height: 40px;width: 120%;" name="lastname" required></label>
 		  </div>
 
 		  <div class="form-row" style="font-size: 14pt;margin-top: 30px;">
 			<label for="" style="font-size: 14pt;color: black;margin-left: 2%;margin-top: 5px;font-weight: bold;" class="col-sm-2 col-form-labels">Email address:
-			<input type="email" class="form-control" id="InputEmail1" placeholder="Enter email" style="height: 40px;width: 70%;" name="email" required></label>
+			<input type="email" class="form-control" id="InputEmail1" placeholder="Enter email" style="height: 40px;width: 120%;" name="email" required></label>
 			<label for="" style="font-size: 14pt;color: black;margin-left: 20%;margin-top: 5px;font-weight: bold;" class="col-sm-2 col-form-labels">Phone:
-			<input class="form-control form-control-sm" type="text" placeholder="+48" style="height: 40px;width: 70%;" name="phone"></label>
+			<input class="form-control form-control-sm" type="text" placeholder="+48" style="height: 40px;width: 120%;" name="phone"></label>
 		  </div>
 
 		  <div class="form-row" style="font-size: 14pt;margin-top: 30px;">
 			<label for="InputPassword1" style="font-size: 14pt;color: black;margin-left: 2%;margin-top: 5px;font-weight: bold;" class="col-sm-2 col-form-labels">Password:
-			<input type="password" class="form-control" id="InputPassword1" placeholder="Password" style="height: 40px;width: 70%;" name="password" required></label>
+			<input type="password" class="form-control" id="InputPassword1" placeholder="Password" style="height: 40px;width: 120%;" name="password" required></label>
 			<label for="InputPassword1" style="font-size: 14pt;color: black;margin-left: 20%;margin-top: 5px;font-weight: bold;" class="col-sm-2 col-form-labels">Confirm password:
-			<input type="password" class="form-control" id="InputPassword2" placeholder="Confirm password" style="height: 40px;width: 70%;" required></label>
+			<input type="password" class="form-control" id="InputPassword2" placeholder="Confirm password" style="height: 40px;width: 120%;" required></label>
 		  </div>
 
 		  <div class="form-row">

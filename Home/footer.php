@@ -1,46 +1,86 @@
-		<footer class="tm-bg-gray pt-5 pb-3 tm-text-gray tm-footer">
-			<div class="container-fluid tm-container-small">
-				<div class="row">
-					<div class="col-lg-6 col-md-12 col-12 px-5 mb-5">
-						<h3 class="tm-text-primary mb-4 tm-footer-title">About Project</h3>
-						<p>Student Name: Lidya Nuramo</p>
-						<p>Student ID: 030794</p>
-						<p>Student group: 3 S130Z</p>
-						<p>Course Name: Computer Measurements Systems</p>
-					</div>
-					<div class="col-lg-3 col-md-6 col-sm-6 col-12 px-5 mb-5">
-						<h3 class="tm-text-primary mb-4 tm-footer-title">Links</h3>
-						<ul class="tm-footer-links pl-0">
-							<li><a href="mailto:lidyagnuramo@gmail.com">Contact</a></li>
-						</ul>
-					</div>
-					<div class="col-lg-3 col-md-6 col-sm-6 col-12 px-5 mb-5">
-						<ul class="tm-social-links d-flex justify-content-end pl-0 mb-5">
-							<li class="mb-2"><a href="https://facebook.com"><i class="fab fa-facebook"></i></a></li>
-							<li class="mb-2"><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
-							<li class="mb-2"><a href="https://instagram.com"><i class="fab fa-instagram"></i></a></li>
-							<li class="mb-2"><a href="https://pinterest.com"><i class="fab fa-pinterest"></i></a></li>
-						</ul>
-						<div class="col-lg-8 col-md-7 col-12 px-5 mb-3">
-							© 2021 Lidya Nuramo. All rights reserved.
-						</div>
-					</div>
+<?php
+session_start();
+if(isset($_SESSION['username'])){
+?>
+
+<!doctype html>
+
+<html lang="en">
+
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Bootstrap CSS -->
+		<link rel="shortcut icon" type="Image/x-icon" href="../Image/logo2.ico">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="CSS/index.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+		<link rel="stylesheet" href="../CSS/bootstrap.min.css">
+		<link rel="stylesheet" href="../CSS/all.min.css">
+		<link rel="stylesheet" href="../CSS/templatemo-style.css">
+		<title>Lidya Nuramo - CMS Project </title>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		  <a class="navbar-brand" href="#">Lidya Nuramo CMS project</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+			  <li class="nav-item">
+				<a class="nav-link" href="">Home</a>
+			  </li>
+			  <li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				  Exercises
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				  <a class="dropdown-item" href="../Exercise1">Exercise 1</a>
+				  <a class="dropdown-item" href="../Exercise2">Exercise 2</a>
+				  <div class="dropdown-divider"></div>
+				  <a class="dropdown-item" href="../Exercise3">Exercise 3</a>
+				  <a class="dropdown-item" href="#">Exercise 4</a>
 				</div>
-			</div>
-		</footer>
+			  </li>
+			  <?php
+				if ($_SESSION['AccountType'] == "admin")
+				{ ?>
+				<li class="nav-item">
+					<a class="nav-link" href="../phpmyadmin/" target="_blank">Database</a>
+				 </li>
+				 <li class="nav-item">
+					<a class="nav-link" href="#">User accounts</a>
+				 </li>
+				<?php }
+			  ?>
+			  <li class="nav-item">
+				<a class="nav-link" href="../DB/process.php?action=logout">Logout</a>
+			  </li>
+			</ul>
+			<!--form class="form-inline my-2 my-lg-0">
+			  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+			  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+			</form-->
+		  </div>
+		</nav>
 		
-		<script src="js/plugins.js"></script>
-		<script>
-			$(window).on("load", function() {
-				$('body').addClass('loaded');
-			});
-		</script>
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
-		<script src="JS/scripts.js" type="text/javascript"></script>
-	</body>
-</html>
+	</head>
+	<body style="background: url(../Image/bg2.png) no-repeat center center fixed; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;"> 
+		<div class="tm-hero d-flex justify-content-center align-items-center" data-parallax="scroll" data-image-src="../Image/bg2.jpg">
+			<form class="d-flex tm-search-form">
+				<input class="form-control tm-search-input" type="search" placeholder="Search" aria-label="Search">
+				<button class="btn btn-outline-success tm-search-btn" type="submit">
+					<i class="fas fa-search"></i>
+				</button>
+			</form>
+		</div>
+<?php
+}
+else{
+    header("Location: ../index.php?action=noaccount");
+}
+?>

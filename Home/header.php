@@ -70,3 +70,6 @@ if(isset($_SESSION['username'])){
 		</nav>
 		
 	</head>
+<?php
+}
+?>

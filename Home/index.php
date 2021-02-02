@@ -2,7 +2,7 @@
 include('../DB/process.php');
 include('header.php');
 ?>
-	<body style="background: url(../Image/bg2.jpg) no-repeat center center fixed; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;">  
+	<body style="background: url(../Image/bg2.png) no-repeat center center fixed; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;">  
 		
 		<div class="all">
 			<div class="container" style="margin-top: 80px;font-size: 150%;">

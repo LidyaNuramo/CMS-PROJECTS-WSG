@@ -22,7 +22,7 @@ if(!empty($_GET['action']))
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- Bootstrap CSS -->
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-		<link rel="shortcut icon" type="Image/x-icon" href="Image/logo2.ico">
+		<link rel="shortcut icon" type="Image/x-icon" href="Image/Logo.ico">
 		<title>Lidya Nuramo - CMS Project </title>
 	</head>
 
@@ -35,11 +35,6 @@ if(!empty($_GET['action']))
 		  <li class="nav-item">
 			<form class="form-inline my-2 my-lg-0" action="index.php">
 				<label style="font-size: 11pt;color: black;margin-top:25px;color: white;margin-right: 10px;"> Already have an account? </label><button class="btn btn-outline-primary" type="submit" style="margin-top:2px;">Sign in</button>
-			</form>
-		  </li>
-		  <li class="nav-item">
-			<form class="form-inline my-2 my-lg-0" action="Guest Home">
-				<label style="font-size: 11pt;color: black;margin-left: 10px;margin-right: 10px;margin-top:25px;color: white;"> Or </label><button class="btn btn-outline-primary" type="submit" style="margin-top:2px;margin-right:10px;">Log in as a Guest</button>
 			</form>
 		  </li>
 		</ul>

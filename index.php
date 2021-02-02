@@ -59,7 +59,7 @@
 		?>
 	
 		<div class="p-3 mb-2 bg-secondary text-white">
-			<form action="DB/process.php?action=login" method="POST">
+			<form class="form-group row" action="DB/process.php?action=login" method="POST" style="background: rgba(192,192,192, 0.7);padding-top:30px;margin-top: 100px;padding-bottom:60px;height: 100%;width: 90%;margin-left: 5%;">
 				<div class="form-group">
 				  <label for="exampleInputEmail1">Email address</label>
 				  <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>

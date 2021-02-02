@@ -72,4 +72,7 @@ if(isset($_SESSION['username'])){
 	</head>
 <?php
 }
+else{
+    header("Location: ../index.php?action=noaccount");
+}
 ?>

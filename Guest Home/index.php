@@ -44,7 +44,7 @@
 				</div>
 			  </li>
 			  <li class="nav-item">
-				<a class="nav-link disabled" href="../DB/process.php?action=logout">Logout</a>
+				<a class="nav-link" href="../DB/process.php?action=logout">Logout</a>
 			  </li>
 			</ul>
 			<!--form class="form-inline my-2 my-lg-0">
@@ -55,7 +55,7 @@
 		</nav>
 		
 		<div class="all">
-			<div class="container" style="margin-top: 80px;margin-left:-100px;font-size: 200%;">
+			<div class="container" style="margin-top: 80px;font-size: 150%;">
 				<h1>Exercises</h1>
 				<p><h2>Student Name: Lidya Nuramo</h2></p>
 				<p><h2>Student ID: 030794</h2></p>

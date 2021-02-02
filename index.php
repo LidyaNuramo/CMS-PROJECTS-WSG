@@ -73,6 +73,9 @@
 					<label for="exampleInputPassword1" style="font-size: 14pt;color: white;margin-left: 7%;margin-top: 5px;font-weight: bold;" class="col-sm-2 col-form-labels">Password:</label>
 					<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" style="height: 40px;width: 75%; margin-left: 7%;" name="password" required>
 				</div>
+				<div class="form-row" style="margin-top: 4%;margin-left: 65%;">
+					<button type="submit" class="btn btn-primary" style="width: 100px;">Submit</button>
+				</div>
 			</form>
 		</div>
 		

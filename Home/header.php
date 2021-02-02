@@ -52,7 +52,7 @@ if(isset($_SESSION['username'])){
 					<a class="nav-link" href="../phpmyadmin/" target="_blank">Database</a>
 				 </li>
 				 <li class="nav-item">
-					<a class="nav-link" href="#" target="_blank">User accounts</a>
+					<a class="nav-link" href="#">User accounts</a>
 				 </li>
 				<?php }
 			  ?>

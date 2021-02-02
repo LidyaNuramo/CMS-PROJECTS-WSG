@@ -6,17 +6,17 @@
 ?>
 		<meta http-equiv="refresh" content="10" />
 		<div class="row">
-            <div class="col-sm-12" style="margin-left:2%; margin-top: 30px; margin-bottom: 30 px;">
+            <div class="col-sm-12" style="margin-left:2%; margin-top: 100px; padding-bottom: 100 px;">
                 <table class="table table-striped" border="5">
                 <thead>
-                    <tr class="thead-dark" style="font-size: 20pt;max-width:70%;white-space:nowrap;">
+                    <tr class="thead-dark" style="font-size: 18pt;max-width:70%;white-space:nowrap;">
                         <th scope="col">#</th>
                         <th scope="col">Address</th>
                         <th scope="col">Port</th>
 						<th scope="col">Status</th>
-                        <th scope="col">Number of failed connection attempts</th>
+                        <th scope="col">Reconnection attempts</th>
                         <th scope="col">Connection loss time </th>
-                        <th scope="col">Total down time</th>
+                        <th scope="col">Total downtime</th>
                         <th scope="col">Action</th>
                     </tr>
                 </thead>
@@ -29,28 +29,43 @@
                     foreach($results as $result){?>
                     <tr>
 						<?php
+						$id = $result['id'];
 						$address = $result['address'];
 						$port = $result['port'];
 						$attempts = $result['failedattempts'];
 						$failedtime = $result['failedtime'];
-						$time = '';
-						$duration = $result['failedtime'];
+						$duration = $result['totaldowntime'];
 						$durationmin = 0;
 						$durationsec = 0;
 						$fp = @fsockopen($address, $port, $errno, $errstr, 10);
-						if ($fp) { $status ='OK'; } 
+						if ($fp) { 
+							$status ='OK'; 
+							if ($failedtime != "0"){
+								$failedtime = 0;
+							}
+						} 
 						else 
 						{ 
 							$status ='Out-of-order';
+							$attempts = $attempts + 1;
 							date_default_timezone_set("Europe/Warsaw"); 
 							$time = date("h:i:sa");
-							$failedtime = $time;
+							if ($failedtime == "0"){
+								$failedtime = $time;
+							}
 							//$duration = ($errno)*10;
 							//$durationmin = intdiv($duration, 60);
 							//$durationsec = $duration%60;
 							//$duration = '';
+							$data=array(
+								"failedattempts"=>$attempts,
+								"failedtime"=>$failedtime,
+								"totaldowntime"=>$duration,
+							);
+							$where['id']= '='.$id;
+							$database->updateRows("hosts",$data,$where);
 						}
-						if (!$fp) { $status ="$errstr ($errno)"; }
+						//if (!$fp) { $status ="$errstr ($errno)"; }
 						?>
 						<td><?php echo $num;?></td>
                         <td><?php echo $result['address'];?></td>

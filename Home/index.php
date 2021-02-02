@@ -51,7 +51,7 @@ if(isset($_SESSION['username'])){
 				</div>
 			  </li>
 			  <?php
-				if ($_SESSION['username'] == "admin")
+				if ($_SESSION['AccountType'] == "admin")
 				{ ?>
 				<li class="nav-item">
 					<a class="nav-link" href="../phpmyadmin/" target="_blank">Database</a>

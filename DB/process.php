@@ -13,12 +13,13 @@ if(!empty($_GET['action'])){
 				session_start();
 				$_SESSION['username']=$user['FirstName'];
 				$_SESSION['lastname']=$user['LastName'];
-				$_SESSION['userID']=$user['userID'];
+				$_SESSION['userID']=$user['ID'];
+				$_SESSION['AccountType']=$user['AccountType'];
 				header('Location:../Home');
 				break;
 		   }
 		   else{
-				header("Location: '../index.php?action=no'");
+				header('Location:../index.php?action=no');
 		   }
 		   break;
 		case 'signup':
@@ -50,7 +51,18 @@ if(!empty($_GET['action'])){
 				header($rr);
 				break;
 			}
-			header("Location: ../signup.php?action=no");
+			$rr="Location: signup.php?action=no";
+			header($rr);
+			break;
+		case 'logout':
+			session_start();
+			if(isset($_SESSION['username'])){
+				session_destroy();
+				header('Location: ../index.php');
+			}
+			else{
+				header('Location: ../index.php');
+			}
 			break;
    }
 }

@@ -76,10 +76,6 @@
 				</div>
 			</form>
 		</div>
-		
-		<div class="Footer" id="Footer">
-			<p align="right" style="margin-right: 10px;margin-top: 50px;color: white;"> © 2021, Lidya Nuramo </p>
-		</div>
 	</body>
 	
 	

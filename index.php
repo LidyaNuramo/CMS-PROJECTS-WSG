@@ -72,7 +72,7 @@
 					<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" style="height: 40px;width: 700px;margin-left: 7%;" name="password" required>
 				</div>
 				<div class="form-row">
-					<button type="submit" class="btn btn-primary" style="margin-top: 20 px; width: 150px;margin-left: 60%;">Submit</button>
+					<button type="submit" class="btn btn-primary" style="margin-top: 4%; width: 150px;margin-left: 70%;">Submit</button>
 				</div>
 			</form>
 		</div>

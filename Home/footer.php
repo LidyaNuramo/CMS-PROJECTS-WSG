@@ -12,9 +12,3 @@
 		<script src="JS/scripts.js" type="text/javascript"></script>
 	</body>
 </html>
-<?php
-}
-else{
-    header("Location: ../index.php?action=noaccount");
-}
-?>

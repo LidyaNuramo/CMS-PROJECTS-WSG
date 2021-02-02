@@ -79,7 +79,7 @@
 	</body>
 	
 	<div class="Footer" id="Footer">
-		<p align="right" style="margin-right: 10px;margin-top: 50px;color: black;"> © 2020, Lidya Nuramo </p>
+		<p align="right" style="margin-right: 10px;margin-top: 50px;color: white;"> © 2021, Lidya Nuramo </p>
 	</div>
 	
 	<footer>

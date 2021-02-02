@@ -16,14 +16,6 @@
 		<nav class="nav text-light bg-dark">
 		  <a class="nav-link active" aria-current="page" href="#">Lidya Nuramo CMS project</a>
 		</nav>
-		<ul class="nav justify-content-end">
-		  <li class="nav-item">
-			<a class="nav-link" href="signup.php">Create an account</a>
-		  </li>
-		  <li class="nav-item">
-			<a class="nav-link" href="Guest Home">Log in as a Guest</a>
-		  </li>
-		</ul>
 		<?php
 			if(!empty($_GET['action']))
 			{

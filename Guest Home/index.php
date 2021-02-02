@@ -1,3 +1,7 @@
+<?php
+include('../DB/process.php');
+?>
+
 <!doctype html>
 
 <html lang="en">

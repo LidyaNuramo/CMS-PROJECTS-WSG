@@ -1,6 +1,6 @@
 <?php
 include('../DB/process.php');
-include('header.php');
+include('../header.php');
 ?> 
 		
 		<div class="container-fluid tm-container-content tm-mt-60">
@@ -50,5 +50,5 @@ include('header.php');
 		</div> <!-- container-fluid, tm-container-content -->
 		
 <?php
-	include('footer.php');
+	include('../footer.php');
 ?>

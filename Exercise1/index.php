@@ -6,10 +6,10 @@
 ?>
 		<meta http-equiv="refresh" content="10" />
 		<div class="row">
-            <div class="col-sm-12" style="margin-left:2%; margin-top: 100px; margin-bottom: 100 px;">
+            <div class="col-sm-12" style="margin-left:2%; margin-top: 100px;">
                 <table class="table table-striped" border="5">
                 <thead>
-                    <tr class="thead-dark" style="font-size: 16pt;max-width:70%;white-space:nowrap;">
+                    <tr class="thead-dark" style="font-size: 16pt;max-width:65%;white-space:nowrap;">
                         <th scope="col">#</th>
                         <th scope="col">Address</th>
                         <th scope="col">Port</th>
@@ -83,6 +83,18 @@
             </table>
             </div>
         </div>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
 <?php
 	include('../footer.php');
 ?>

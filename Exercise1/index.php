@@ -6,7 +6,7 @@
 ?>
 		<meta http-equiv="refresh" content="10" />
 		<div class="row">
-            <div class="col-sm-12" style="margin-left:0.1%; margin-top: 70px;">
+            <div class="col-sm-12" style="margin-left:1%; margin-top: 70px;">
                 <table class="table table-striped" border="5" style="max-width:70%">
 				<thead>
 					<tr class="thead-dark" style="font-size: 15pt;max-width:50%;white-space:nowrap;">

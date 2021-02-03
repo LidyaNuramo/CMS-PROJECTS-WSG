@@ -5,7 +5,6 @@
 		$database= new Database();
 ?>
 		<meta http-equiv="refresh" content="25" />
-		<br>
 		<div class="row">
             <div class="col-sm-12" style="margin-left:1%; margin-top: 100px;">
                 <table class="table table-striped" border="5">
@@ -60,7 +59,7 @@
 							if ($failedtime == NULL){
 								$failedtime = $time;
 							}
-							$durationmin = $duration;
+							$durationmin = intdiv($durationmin, 1);
 							$durationsec = $duration%60;
 							if ($durationmin >= 60){
 								$durationhr = intdiv($durationmin, 60);
@@ -91,8 +90,6 @@
             </table>
             </div>
         </div>
-		<br>
-		<br>
 		<br>
 		<br>
 		<br>

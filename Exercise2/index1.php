@@ -1,5 +1,7 @@
 <?php
-
+include '../DB/main.php';
+include('../DB/process.php');
+include('../header.php');
 /**
  * netstat.php - Show online status of hosts and services
  *
@@ -381,4 +383,12 @@ echo "$htmlfooter\n";
  * 0.16 * 2019-01-28  added $showdiagnostics to print errors in extra rows
  *
  */
+?>
+ 	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+<?php
+ include('../footer.php');
 ?>

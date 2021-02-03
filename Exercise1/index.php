@@ -9,7 +9,7 @@
             <div class="col-sm-12" style="margin-left:1%; margin-top: 70px;">
                 <table class="table table-striped" border="5">
 				<thead>
-					<tr class="thead-dark" style="font-size: 16pt;white-space:nowrap;">
+					<tr class="thead-dark" style="font-size: 15pt;white-space:nowrap;">
 						<th scope="col" colspan="8"><p class="h1" style="color: white;">Monitored hosts</p></th>
 					</tr>
                     <tr class="thead-dark" style="font-size: 15pt;white-space:nowrap;">
@@ -23,7 +23,7 @@
                         <th scope="col">Action</th>
                     </tr>
                 </thead>
-                <tbody style="font-size: 12pt;color: black;font-weight: bold;background: rgba(192,192,192, 0.7);">
+                <tbody style="font-size: 11pt;color: black;font-weight: bold;background: rgba(192,192,192, 0.7);max-width:90%">
                     <?php
                     $where['id']="";
                     $results=$database->getRows("hosts","*",$where);

@@ -58,7 +58,6 @@
                     $num=1;
                     foreach($results as $result){?>
                     <tr>
-						<?php
 						<td><?php echo $num;?></td>
                         <td><?php echo $result['address'];?></td>
 						<td><?php echo $result['datetime'];?></td>

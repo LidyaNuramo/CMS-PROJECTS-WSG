@@ -59,7 +59,7 @@
 								$failedtime = $time;
 							}
 							$durationmin = (int)duration;
-							$durationsec = ($duration - $durationmin) * 60;
+							$durationsec = ($duration - floatval($durationmin)) * 60;
 							if ($durationmin >= 60){
 								$durationhr = intdiv($durationmin, 60);
 								$durationmin = $durationmin - ($durationhr * 60);

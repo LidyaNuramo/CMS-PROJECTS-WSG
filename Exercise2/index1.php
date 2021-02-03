@@ -102,9 +102,6 @@ foreach($results as $result){
 	$address = $result['address'];
 	$port = $result['port'];
 	array_push($checks, $result['address'].' | '.$port.' | '.$address.' (port '.$port.')');
-	defaults($checks, array(
-	$result['address'].' | '.$port.' | '.$address.' (port'.
-	));
 };
 
 // exec commands for ping: -l3 (preload) is recommended but

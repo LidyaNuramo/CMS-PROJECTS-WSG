@@ -5,8 +5,8 @@
 ?>
 	
 	<div id="container">
-		<div class="btn-group-vertical" style="margin-top: 50 px; margin-left: 20px;">
-			<a href="#"><button type="button" class="btn btn-secondary" style="width:100px;margin-left: 30px;">Index.php</button></a>
+		<div class="btn-group-vertical" style="padding-top: 50 px; margin-left: 20px;">
+			<a href="index.php"><button type="button" class="btn btn-secondary" style="width:100px;margin-left: 30px;">Index.php</button></a>
 			<a href="index1.php"><button type="button" class="btn btn-secondary" style="width:100px;margin-left: 30px;">Index1.php</button>
 			<a href="index2.php"><button type="button" class="btn btn-secondary" style="width:100px;margin-left: 30px;">Index2.php</button>
 			<!--div class="btn-group" role="group">

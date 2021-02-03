@@ -4,12 +4,12 @@
 	include('../header.php');
 		$database= new Database();
 ?>
-		<meta http-equiv="refresh" content="20" />
+		<meta http-equiv="refresh" content="25" />
 		<br>
 		<div class="row">
             <div class="col-sm-12" style="margin-left:1%; margin-top: 100px;">
                 <table class="table table-striped" border="5">
-				<tr class="thead-dark" style="font-size: 16pt;max-width:65%;white-space:nowrap;">
+				<tr class="thead-dark" style="font-size: 15pt;max-width:65%;white-space:nowrap;">
 				<thead>
 					<tr class="thead-dark" style="font-size: 16pt;max-width:65%;white-space:nowrap;">
 						<th scope="col" colspan="8"><p class="h1" style="color: white;">Monitored hosts</p></th>
@@ -25,7 +25,7 @@
                         <th scope="col">Action</th>
                     </tr>
                 </thead>
-                <tbody style="font-size: 12pt;color: black;font-weight: bold;background: rgba(192,192,192, 0.7)">
+                <tbody style="font-size: 11pt;color: black;font-weight: bold;background: rgba(192,192,192, 0.7)">
                     <?php
                     $where['id']="";
                     $results=$database->getRows("hosts","*",$where);
@@ -43,7 +43,7 @@
 						$durationhr = 0;
 						$durationmin = 0;
 						$durationsec = 0;
-						$fp = @fsockopen($address, $port, $errno, $errstr, 10);
+						$fp = @fsockopen($address, $port, $errno, $errstr, 5);
 						if ($fp) { 
 							$status ='OK'; 
 							if ($failedtime != "0"){
@@ -60,7 +60,7 @@
 							if ($failedtime == NULL){
 								$failedtime = $time;
 							}
-							$durationmin = intdiv($duration, 60);
+							$durationmin = $duration;
 							$durationsec = $duration%60;
 							if ($durationmin >= 60){
 								$durationhr = intdiv($durationmin, 60);

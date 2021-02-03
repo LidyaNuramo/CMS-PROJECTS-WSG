@@ -30,7 +30,7 @@ include('../header.php');
 				</div>
 				<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
 					<figure class="effect-ming tm-video-item">
-						<img src="../Image/ex2.png" alt="Image" class="img-fluid">
+						<img src="../Image/ex3.png" alt="Image" class="img-fluid">
 						<figcaption class="d-flex align-items-center justify-content-center">
 							<h2>Exercise 3</h2>
 							<a href="../Exercise3">View more</a>

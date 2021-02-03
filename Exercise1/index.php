@@ -98,8 +98,8 @@
                     }
                     ?>
 					<tr>
-						<td colspan="7"> </td>
-						<td><form method='POST'><a href='add.php' class='btn btn-success' style='width:70px;'>Add Host</a></form></td>
+						<td colspan="6"> </td>
+						<td colspan="2"><form method='POST'><a href='add.php' class='btn btn-success' style='width:100px;'>Add Host</a></form></td>
 					</tr>
                 </tbody>
             </table>

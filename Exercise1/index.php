@@ -44,11 +44,14 @@
 						$fp = @fsockopen($address, $port, $errno, $errstr, 5);
 						if ($fp) { 
 							$status ='OK'; 
-							if ($failedtime == NULL){
-							}
-							else{
+							if ($failedtime != ""){
 								$failedtime = NULL;
-							}
+								$data=array(
+									"failedtime"=>$failedtime,
+								);
+								$where['id']= '='.$id;
+								$database->updateRows("hosts",$data,$where);
+								}
 						} 
 						else 
 						{ 

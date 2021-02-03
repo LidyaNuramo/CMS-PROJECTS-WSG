@@ -7,7 +7,7 @@
 		<meta http-equiv="refresh" content="10" />
 		<div class="row" style="max-width:95%;">
             <div class="col-sm-12">
-                <table class="table table-striped" border="5" style="margin-top: 70px;margin-left: 2%;max-width:95%;">
+                <table class="table table-striped" border="5" style="margin-top: 70px;margin-left: 2%;">
 				<thead>
 					<tr class="thead-dark" style="font-size: 16pt;white-space:nowrap;">
 						<th scope="col" colspan="8"><p class="h1" style="color: white;">Monitored hosts</p></th>
@@ -44,7 +44,7 @@
 						$fp = @fsockopen($address, $port, $errno, $errstr, 5);
 						if ($fp) { 
 							$status ='OK'; 
-							if ($failedtime != "0"){
+							if ($failedtime != NULL){
 								$failedtime = NULL;
 							}
 						} 

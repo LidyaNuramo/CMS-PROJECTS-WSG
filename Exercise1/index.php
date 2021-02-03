@@ -51,7 +51,13 @@
 								);
 								$where['id']= '='.$id;
 								$database->updateRows("hosts",$data,$where);
-								}
+							}
+							$durationmin = (int)$duration;
+							$durationsec = ($duration - floatval($durationmin)) * 60;
+							if ($durationmin >= 60){
+								$durationhr = intdiv($durationmin, 60);
+								$durationmin = $durationmin - ($durationhr * 60);
+							}
 						} 
 						else 
 						{ 

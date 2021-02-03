@@ -23,7 +23,7 @@
 		</div>
 	</div>
 	<div id="container">
-		<div class="row" style="max-width:75%;margin-top: -100px;margin-left:300px;">
+		<div class="row" style="max-width:75%;margin-top: -200px;margin-left:300px;">
             <div class="col-sm-12">
                 <table class="table table-striped" border="5" style="margin-top: 70px;margin-left: 2%;">
 				<thead>

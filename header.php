@@ -46,6 +46,16 @@ if(isset($_SESSION['username'])){
 				  <a class="dropdown-item" href="#">Exercise 4</a>
 				</div>
 			  </li>
+			  <li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				  Assigned to me
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				  <a class="dropdown-item" href="#">Hosts</a>
+				  <div class="dropdown-divider"></div>
+				  <a class="dropdown-item" href="#">Other</a>
+				</div>
+			  </li>
 			  <?php
 				if ($_SESSION['AccountType'] == "admin")
 				{ ?>

@@ -44,7 +44,7 @@
 						$fp = @fsockopen($address, $port, $errno, $errstr, 5);
 						if ($fp) { 
 							$status ='OK'; 
-							if ($failedtime != ""){
+							if ($failedtime != NULL){
 								$failedtime = NULL;
 								$data=array(
 									"failedtime"=>$failedtime,

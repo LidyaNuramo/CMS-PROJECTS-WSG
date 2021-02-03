@@ -6,8 +6,8 @@
 ?>
 		<meta http-equiv="refresh" content="10" />
 		<div class="row" style="max-width:70%;>
-            <div class="col-sm-12" style="margin-top: 70px;">
-                <table class="table table-striped" border="5">
+            <div class="col-sm-12" style="margin-top: 70px;margin-left: 2%;">
+                <table class="table table-striped" border="5" style="margin-top: 70px;">
 				<thead>
 					<tr class="thead-dark" style="font-size: 15pt;white-space:nowrap;max-width:80%;">
 						<th scope="col" colspan="8"><p class="h1" style="color: white;">Monitored hosts</p></th>

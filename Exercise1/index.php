@@ -4,11 +4,16 @@
 	include('../header.php');
 		$database= new Database();
 ?>
-		<meta http-equiv="refresh" content="10" />
+		<meta http-equiv="refresh" content="20" />
+		<br>
 		<div class="row">
-            <div class="col-sm-12" style="margin-left:2%; margin-top: 100px;">
+            <div class="col-sm-12" style="margin-left:1%; margin-top: 100px;">
                 <table class="table table-striped" border="5">
-                <thead>
+				<tr class="thead-dark" style="font-size: 16pt;max-width:65%;white-space:nowrap;">
+				<thead>
+					<tr class="thead-dark" style="font-size: 16pt;max-width:65%;white-space:nowrap;">
+						<th scope="col" colspan="8"><p class="h1" style="color: white;">Monitored hosts</p></th>
+					</tr>
                     <tr class="thead-dark" style="font-size: 16pt;max-width:65%;white-space:nowrap;">
                         <th scope="col">#</th>
                         <th scope="col">Address</th>
@@ -35,9 +40,10 @@
 						$attempts = $result['failedattempts'];
 						$failedtime = $result['failedtime'];
 						$duration = $result['totaldowntime'];
+						$durationhr = 0;
 						$durationmin = 0;
 						$durationsec = 0;
-						$fp = @fsockopen($address, $port, $errno, $errstr, 7);
+						$fp = @fsockopen($address, $port, $errno, $errstr, 10);
 						if ($fp) { 
 							$status ='OK'; 
 							if ($failedtime != "0"){
@@ -48,15 +54,17 @@
 						{ 
 							$status ='Out-of-order';
 							$attempts = $attempts + 1;
+							$duration = floatval($duration) + 0.5;
 							date_default_timezone_set("Europe/Warsaw"); 
-							$time = date("h:i:sa");
+							$time = date("Y-m-d h:i:sa");
 							if ($failedtime == NULL){
 								$failedtime = $time;
 							}
-							//$duration = ($errno)*10;
-							//$durationmin = intdiv($duration, 60);
-							//$durationsec = $duration%60;
-							//$duration = '';
+							$durationmin = intdiv($duration, 60);
+							$durationsec = $duration%60;
+							if ($durationmin >= 60){
+								$durationhr = intdiv($durationmin, 60);
+							}
 							$data=array(
 								"failedattempts"=>$attempts,
 								"failedtime"=>$failedtime,
@@ -73,7 +81,7 @@
 						<td><?php echo $status;?></td>
 						<td><?php echo $attempts;?></td>
                         <td><?php echo $failedtime;?></td>
-                        <td><?php echo $duration;?></td>
+                        <td><?php echo $durationhr;?>:<?php echo $durationmin;?>:<?php echo $durationsec;?></td>
                         <td><form method='POST'><a href='../DB/process.php?action=deleteHost&id=<?php echo $result['id']?>' class='btn btn-danger' style='width:70px;'>Delete</a></form></td>
                     </tr>
                     <?php $num=$num+1;
@@ -83,12 +91,6 @@
             </table>
             </div>
         </div>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
 		<br>
 		<br>
 		<br>

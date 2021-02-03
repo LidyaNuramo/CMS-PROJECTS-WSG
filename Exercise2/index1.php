@@ -2,7 +2,7 @@
 include '../DB/main.php';
 include('../DB/process.php');
 include('../header.php');
-
+?>
 	<br>
 	<br>
 	<br>
@@ -22,6 +22,7 @@ include('../header.php');
 			</div-->
 		</div>
 	</div>
+<?php
 /**
  * netstat.php - Show online status of hosts and services
  *

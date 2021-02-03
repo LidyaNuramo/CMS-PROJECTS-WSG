@@ -23,7 +23,7 @@
 		</div>
 	</div>
 	<div id="container">
-		<div class="row" style="max-width:95%;">
+		<div class="row" style="max-width:75%;margin-top: -100px;margin-left:300px;">
             <div class="col-sm-12">
                 <table class="table table-striped" border="5" style="margin-top: 70px;margin-left: 2%;">
 				<thead>
@@ -61,7 +61,7 @@
 						<td><?php echo $num;?></td>
                         <td><?php echo $result['address'];?></td>
 						<td><?php echo $result['datetime'];?></td>
-						<td><a href="<?php echo $$result['gmlink'];?>" target="_blank"><?php echo $$result['gmlink'];?></a></td>
+						<td><a href="<?php echo $result['gmlink'];?>" target="_blank"><?php echo $result['gmlink'];?></a></td>
                     </tr>
                     <?php $num=$num+1;
                     }

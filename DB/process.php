@@ -71,6 +71,28 @@ if(!empty($_GET['action'])){
 			$database->removeRows("hosts",$where);
 			header('Location: ../Exercise1');
 			break;
+		case 'addhost':
+			$address=$_POST['name'];
+			$port=$_POST['lastname'];
+			$failedattempts=0;
+			$failedtime=NULL;
+			$totaldowntime=0;
+			session_start();
+			$addedby=$_SESSION['userID'];
+			$database=new Database();
+			$data=array(
+				"ID"=>null,
+				"FirstName"=>$fname,
+				"LastName"=>$lname,
+				"AccountType"=>"standard",
+				"Email"=>$email,
+				"Phone"=>$phone,
+				"Password"=>$password,
+			);
+			$database->insertRows("hosts",$data);
+			$rr="Location: ../Exercise2";
+			header($rr);
+			break;
    }
 }
 ?>

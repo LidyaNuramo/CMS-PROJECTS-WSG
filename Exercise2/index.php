@@ -3,10 +3,10 @@
 	include('../DB/process.php');
 	include('../header.php');
 ?>
-	<div class="btn-group-vertical">
-		<a href="#"><button type="button" class="btn btn-secondary">Index.php</button></a>
-		<a href="Index1.php"><button type="button" class="btn btn-secondary">Index1.php</button>
-		<a href="Index2.php"><button type="button" class="btn btn-secondary">Index2.php</button>
+	<div class="btn-group-vertical" style="margin-top: 50 px;">
+		<a href="#"><button type="button" class="btn btn-secondary" style="width:100px;">Index.php</button></a>
+		<a href="index1.php"><button type="button" class="btn btn-secondary" style="width:100px;">Index1.php</button>
+		<a href="index2.php"><button type="button" class="btn btn-secondary" style="width:100px;">Index2.php</button>
 		<!--div class="btn-group" role="group">
 			<button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 			  Dropdown
@@ -17,6 +17,11 @@
 			</div>
 		</div-->
 	</div>	
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>		
 <?php
 	include('../footer.php');
 ?>

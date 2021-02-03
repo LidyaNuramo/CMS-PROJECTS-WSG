@@ -6,13 +6,13 @@
 ?>
 		<meta http-equiv="refresh" content="10" />
 		<div class="row">
-            <div class="col-sm-12" style="margin-left:0.2%; margin-top: 70px;">
+            <div class="col-sm-12" style="margin-top: 70px;">
                 <table class="table table-striped" border="5">
 				<thead>
 					<tr class="thead-dark" style="font-size: 14pt;white-space:nowrap;">
 						<th scope="col" colspan="8"><p class="h1" style="color: white;">Monitored hosts</p></th>
 					</tr>
-                    <tr class="thead-dark" style="font-size: 14pt;white-space:nowrap;max-width:80%;">
+                    <tr class="thead-dark" style="font-size: 14pt;white-space:nowrap;max-width:70%;">
                         <th scope="col">#</th>
                         <th scope="col">Address</th>
                         <th scope="col">Port</th>
@@ -23,7 +23,7 @@
                         <th scope="col">Action</th>
                     </tr>
                 </thead>
-                <tbody style="font-size: 10pt;color: black;font-weight: bold;background: rgba(192,192,192, 0.7);max-width:80%;">
+                <tbody style="font-size: 10pt;color: black;font-weight: bold;background: rgba(192,192,192, 0.7);max-width:70%;">
                     <?php
                     $where['id']="";
                     $results=$database->getRows("hosts","*",$where);

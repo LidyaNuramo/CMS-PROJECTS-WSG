@@ -2,6 +2,7 @@
 include '../DB/main.php';
 include('../DB/process.php');
 include('../header.php');
+$database= new Database();
 ?>
 	<br>
 	<br>
@@ -74,6 +75,9 @@ defaults($alertfile, 'netstat.txt');
 //   syntax: host or IP to check | port | description
 //     if $port = 'ping' an ICMP ping will be executed
 //     if $port = 'headline' $host is printed as a headline
+$where['id']="";
+$results=$database->getRows("hosts","*",$where);
+
 defaults($checks, array(
 
      'Examples testing localhost |headline',
@@ -92,8 +96,16 @@ defaults($checks, array(
  'www.google.com  |  80 | WWW server @ google.com',
  'localhost       |-ping| Disabled ping',
  'www.example.com | -80 | WWW server @ www.example.com',
-
 ));
+
+foreach($results as $result){
+	$address = $result['address'];
+	$port = $result['port'];
+	array_push($checks, $result['address'].' | '.$port.' | '.$address.' (port '.$port.')');
+	defaults($checks, array(
+	$result['address'].' | '.$port.' | '.$address.' (port'.
+	));
+};
 
 // exec commands for ping: -l3 (preload) is recommended but
 //defaults($ping_command, 'ping -l3 -c3 -w1 -q'); // might not work everywhere

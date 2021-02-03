@@ -244,7 +244,7 @@ if (isset($_GET['showdiagnostics']) || isset($_GET['diags']))
     }
 }
 
-echo "<table class=\"status_table\">\n";
+echo "<table class=\"status_table\"style='background: rgba(192,192,192, 0.7);'>\n";
 
 // main loop of checks
 foreach ($checks as $check)

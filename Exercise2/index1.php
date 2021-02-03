@@ -198,7 +198,7 @@ echo $htmlheader;
 
 // headline, date and time and start of table
 echo "<h1>$headline</h1>\n";
-if ($datetime) echo '<p class="datetime">as of ' . date($datetime) . "</p>\n";
+if ($datetime) echo '<p class="datetime" style="color: black">as of ' . date($datetime) . "</p>\n";
 
 // show the contents of $alertfile if it is readable and larger than 7 bytes
 if (file_exists($alertfile))

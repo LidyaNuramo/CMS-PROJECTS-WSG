@@ -8,9 +8,8 @@
 		<div class="row">
             <div class="col-sm-12" style="margin-left:0.5%; margin-top: 70px;">
                 <table class="table table-striped" border="5">
-				<tr class="thead-dark" style="font-size: 15pt;max-width:65%;white-space:nowrap;">
 				<thead>
-					<tr class="thead-dark" style="font-size: 16pt;max-width:60%;white-space:nowrap;">
+					<tr class="thead-dark" style="font-size: 15pt;max-width:60%;white-space:nowrap;">
 						<th scope="col" colspan="8"><p class="h1" style="color: white;">Monitored hosts</p></th>
 					</tr>
                     <tr class="thead-dark" style="font-size: 15pt;max-width:60%;white-space:nowrap;">
@@ -59,7 +58,7 @@
 							if ($failedtime == NULL){
 								$failedtime = $time;
 							}
-							$durationmin = intval(duration);
+							$durationmin = (int)duration;
 							$durationsec = ($duration - $durationmin) * 60;
 							if ($durationmin >= 60){
 								$durationhr = intdiv($durationmin, 60);

@@ -99,7 +99,7 @@
                     ?>
 					<tr>
 						<td colspan="7"> </td>
-						<td><form method='POST'><a href='add.php' class='btn btn-success' style='width:80px;'>Add Host</a></form></td>
+						<td><form method='POST'><a href='add.php' class='btn btn-success' style='width:70px;'>Add Host</a></form></td>
 					</tr>
                 </tbody>
             </table>

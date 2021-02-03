@@ -6,13 +6,13 @@
 ?>
 		<meta http-equiv="refresh" content="10" />
 		<div class="row">
-            <div class="col-sm-12" style="margin-left:0.5%; margin-top: 70px;">
-                <table class="table table-striped" border="5">
+            <div class="col-sm-12" style="margin-left:0.1%; margin-top: 70px;">
+                <table class="table table-striped" border="5" style="max-width:50%">
 				<thead>
-					<tr class="thead-dark" style="font-size: 15pt;max-width:60%;white-space:nowrap;">
+					<tr class="thead-dark" style="font-size: 15pt;max-width:50%;white-space:nowrap;">
 						<th scope="col" colspan="8"><p class="h1" style="color: white;">Monitored hosts</p></th>
 					</tr>
-                    <tr class="thead-dark" style="font-size: 15pt;max-width:60%;white-space:nowrap;">
+                    <tr class="thead-dark" style="font-size: 15pt;max-width:50%;white-space:nowrap;">
                         <th scope="col">#</th>
                         <th scope="col">Address</th>
                         <th scope="col">Port</th>
@@ -23,7 +23,7 @@
                         <th scope="col">Action</th>
                     </tr>
                 </thead>
-                <tbody style="font-size: 11pt;color: black;font-weight: bold;background: rgba(192,192,192, 0.7);max-width:60%;">
+                <tbody style="font-size: 11pt;color: black;font-weight: bold;background: rgba(192,192,192, 0.7);max-width:50%;">
                     <?php
                     $where['id']="";
                     $results=$database->getRows("hosts","*",$where);
@@ -58,7 +58,7 @@
 							if ($failedtime == NULL){
 								$failedtime = $time;
 							}
-							$durationmin = (int)duration;
+							$durationmin = (int)$duration;
 							$durationsec = ($duration - floatval($durationmin)) * 60;
 							if ($durationmin >= 60){
 								$durationhr = intdiv($durationmin, 60);

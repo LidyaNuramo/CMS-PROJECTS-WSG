@@ -12,7 +12,7 @@
 					<tr class="thead-dark" style="font-size: 15pt;white-space:nowrap;">
 						<th scope="col" colspan="8"><p class="h1" style="color: white;">Monitored hosts</p></th>
 					</tr>
-                    <tr class="thead-dark" style="font-size: 15pt;white-space:nowrap;">
+                    <tr class="thead-dark" style="font-size: 15pt;white-space:nowrap;max-width:80%;">
                         <th scope="col">#</th>
                         <th scope="col">Address</th>
                         <th scope="col">Port</th>
@@ -23,7 +23,7 @@
                         <th scope="col">Action</th>
                     </tr>
                 </thead>
-                <tbody style="font-size: 11pt;color: black;font-weight: bold;background: rgba(192,192,192, 0.7);max-width:90%">
+                <tbody style="font-size: 11pt;color: black;font-weight: bold;background: rgba(192,192,192, 0.7);max-width:80%;">
                     <?php
                     $where['id']="";
                     $results=$database->getRows("hosts","*",$where);

@@ -4,16 +4,16 @@
 	include('../header.php');
 		$database= new Database();
 ?>
-		<meta http-equiv="refresh" content="25" />
+		<meta http-equiv="refresh" content="10" />
 		<div class="row">
-            <div class="col-sm-12" style="margin-left:1%; margin-top: 100px;">
+            <div class="col-sm-12" style="margin-left:0.5%; margin-top: 70px;">
                 <table class="table table-striped" border="5">
 				<tr class="thead-dark" style="font-size: 15pt;max-width:65%;white-space:nowrap;">
 				<thead>
-					<tr class="thead-dark" style="font-size: 16pt;max-width:65%;white-space:nowrap;">
+					<tr class="thead-dark" style="font-size: 16pt;max-width:60%;white-space:nowrap;">
 						<th scope="col" colspan="8"><p class="h1" style="color: white;">Monitored hosts</p></th>
 					</tr>
-                    <tr class="thead-dark" style="font-size: 16pt;max-width:65%;white-space:nowrap;">
+                    <tr class="thead-dark" style="font-size: 15pt;max-width:60%;white-space:nowrap;">
                         <th scope="col">#</th>
                         <th scope="col">Address</th>
                         <th scope="col">Port</th>
@@ -24,7 +24,7 @@
                         <th scope="col">Action</th>
                     </tr>
                 </thead>
-                <tbody style="font-size: 11pt;color: black;font-weight: bold;background: rgba(192,192,192, 0.7)">
+                <tbody style="font-size: 11pt;color: black;font-weight: bold;background: rgba(192,192,192, 0.7);max-width:60%;">
                     <?php
                     $where['id']="";
                     $results=$database->getRows("hosts","*",$where);
@@ -53,16 +53,17 @@
 						{ 
 							$status ='Out-of-order';
 							$attempts = $attempts + 1;
-							$duration = floatval($duration) + 0.5;
+							$duration = floatval($duration) + 0.25;
 							date_default_timezone_set("Europe/Warsaw"); 
 							$time = date("Y-m-d h:i:sa");
 							if ($failedtime == NULL){
 								$failedtime = $time;
 							}
-							$durationmin = intdiv($durationmin, 1);
-							$durationsec = $duration%60;
+							$durationmin = intval(duration);
+							$durationsec = ($duration - $durationmin) * 60;
 							if ($durationmin >= 60){
 								$durationhr = intdiv($durationmin, 60);
+								$durationmin = $durationmin - ($durationhr * 60);
 							}
 							$data=array(
 								"failedattempts"=>$attempts,

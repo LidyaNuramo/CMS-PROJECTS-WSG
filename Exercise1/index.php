@@ -97,6 +97,10 @@
                     <?php $num=$num+1;
                     }
                     ?>
+					<tr>
+						<td colspan="7"></td>
+						<td><form method='POST'><a href='add.php' class='btn btn-success' style='width:100px;'>Add Host</a></form></td>
+					</tr>
                 </tbody>
             </table>
             </div>

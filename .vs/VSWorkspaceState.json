@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\DB",
+    "\\Exercise1",
+    "\\Exercise2"
   ],
-  "SelectedNode": "\\index.php",
+  "SelectedNode": "\\Exercise2\\index1.php",
   "PreviewInSolutionExplorer": false
 }

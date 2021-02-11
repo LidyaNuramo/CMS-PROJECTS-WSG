@@ -33,6 +33,14 @@ include('../header.php');
 		}
 		?>
 	</div>
+	<br>
+
+	<label for="name" class="col-sm-2 col-form-label" style="font-size: 14pt;margin-left: 180px;" required>Directory Files Info:</label>
+	<br>
+	<?php
+	$output = shell_exec ('ls -al');
+	echo "<pre>$output</pre>";
+	?>
 
 	<br>
 	<label for="name" class="col-sm-2 col-form-label" style="font-size: 14pt;margin-left: 180px;" required>PHP Info:</label>

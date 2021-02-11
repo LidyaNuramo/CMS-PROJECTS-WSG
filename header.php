@@ -43,7 +43,7 @@ if(isset($_SESSION['username'])){
 				  <a class="dropdown-item" href="../Exercise2">Exercise 2</a>
 				  <div class="dropdown-divider"></div>
 				  <a class="dropdown-item" href="../Exercise3">Exercise 3</a>
-				  <a class="dropdown-item" href="#">Exercise 4</a>
+				  <a class="dropdown-item" href="../Exercise4">Exercise 4</a>
 				</div>
 			  </li>
 			  <li class="nav-item dropdown">

@@ -18,6 +18,8 @@ include('../header.php');
 	</label>
 	<br>
 
+	<label for="name" class="col-sm-2 col-form-label" style="font-size: 14pt;margin-left: 180px;" required>Hosting Server Info:</label>
+	<br>
 	<div class="container" style="margin-left: 180px;">
 		<?php
 		exec ('TERM=xterm /usr/bin/top n 1 b i',
@@ -34,6 +36,7 @@ include('../header.php');
 
 	<br>
 	<label for="name" class="col-sm-2 col-form-label" style="font-size: 14pt;margin-left: 180px;" required>PHP Info:</label>
+	<br>
 	<?php
 		echo phpinfo ();
 	?>

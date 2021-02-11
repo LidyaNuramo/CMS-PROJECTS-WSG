@@ -15,8 +15,8 @@ include('../header.php');
 	<?php
 		echo exec ('whoami');
 	?>
-	</lable>
-	<label for="name" class="col-sm-2 col-form-label" style="font-size: 14pt; " required>PHP Info:</label>
+	</label>
+	<label for="name" class="col-sm-2 col-form-label" style="font-size: 14pt; margin-left: 200px;" required>PHP Info:</label>
 	<?php
 		echo phpinfo ();
 	?>

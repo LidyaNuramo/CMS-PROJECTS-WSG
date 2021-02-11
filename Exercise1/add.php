@@ -29,10 +29,10 @@
 		      		<?php
 			    	$database=new Database();
 					$where['id']="";
-					$results=$database->getRows("users","*",$where,"AND","Name asc");
+					$results=$database->getRows("users","*",$where);
 					$rr="";
 					foreach($results as $result){
-						$rr=$rr."<option value=".$result['id'].">".$result['firstname']." ".$result['firstname']."</option>";
+						$rr=$rr."<option value=".$result['id'].">".$result['firstname']." ".$result['lastname']."</option>";
 					}
 					echo $rr;
 			    ?>

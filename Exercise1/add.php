@@ -24,7 +24,7 @@
 
 		  <div class="form-row">
 			<label for="name" class="col-sm-2 col-form-label" style="font-size: 14pt; margin-top: 30px;" required>Assigned to:</lable>
-				<select class="form-control" name="assignedto" style="font-size: 14pt; height: 70%; width:600%;">
+				<select class="form-control" name="assignedto" style="font-size: 14pt; height: 60%; width:700%;">
 				  <option selected value=""> </option>
 		      		<?php
 			    	$database=new Database();

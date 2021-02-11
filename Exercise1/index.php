@@ -7,7 +7,7 @@
 		<meta http-equiv="refresh" content="10" />
 		<div class="row" style="max-width:75%;">
             <div class="col-sm-12">
-                <table class="table table-striped" border="5" style="margin-top: 70px;margin-left: 2%;width:100%;">
+                <table class="table table-striped" border="5" style="margin-top: 70px;margin-left: 2%;width:70%;">
 				<thead>
 					<tr class="thead-dark" style="font-size: 16pt;white-space:nowrap;">
 						<th scope="col" colspan="10"><p class="h1" style="color: white;">Monitored hosts</p></th>
@@ -17,8 +17,8 @@
                         <th scope="col" style="width:10%;">Address</th>
                         <th scope="col" style="width:10%;">Port</th>
 						<th scope="col" style="width:10%;">Status</th>
-                        <th scope="col" style="width:10%;">Reconnection attempts</th>
-                        <th scope="col" style="width:10%;">Connection loss time </th>
+                        <th scope="col" style="width:10%;">Failed #</th>
+                        <th scope="col" style="width:10%;">Loss time </th>
                         <th scope="col" style="width:10%;">Total downtime</th>
 						<th scope="col" style="width:10%;">Added by</th>
 						<th scope="col" style="width:10%;">Assigned to</th>

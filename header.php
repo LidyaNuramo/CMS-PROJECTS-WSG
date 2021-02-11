@@ -47,11 +47,11 @@ if(isset($_SESSION['username'])){
 				</div>
 			  </li>
 			  <li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" href="Exercise1/assigned.php" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 				  Assigned to me
 				</a>
 				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-				  <a class="dropdown-item" href="#">Hosts</a>
+				  <a class="dropdown-item" href="Exercise1/assigned.php">Hosts</a>
 				  <div class="dropdown-divider"></div>
 				  <a class="dropdown-item" href="#">Other</a>
 				</div>

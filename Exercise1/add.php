@@ -40,7 +40,7 @@
 		  </div>
 
 		  <div class="form-row">
-			<button type="submit" class="btn btn-primary" style="position: right;margin-top: 40px;margin-left: 65%;width: 20%;font-size:1,5vw;font-weight: bold;" id="submit">Submit Host</button>
+			<button type="submit" class="btn btn-primary" style="position: right;margin-top: 40px;margin-left: 65%;width: 20%;font-size:1,5vw;font-weight: bold;" id="submit">Register Host</button>
 		  </div>
 		</form>
 

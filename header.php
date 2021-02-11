@@ -32,17 +32,17 @@ if(isset($_SESSION['username'])){
 		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav mr-auto">
 			  <li class="nav-item">
-				<a class="nav-link" href="/Home">Home</a>
+				<a class="nav-link" href="../Home">Home</a>
 			  </li>
 			  <li class="nav-item dropdown">
 				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 				  Exercises
 				</a>
 				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-				  <a class="dropdown-item" href="/Exercise1">Exercise 1</a>
-				  <a class="dropdown-item" href="/Exercise2">Exercise 2</a>
+				  <a class="dropdown-item" href="../Exercise1">Exercise 1</a>
+				  <a class="dropdown-item" href="../Exercise2">Exercise 2</a>
 				  <div class="dropdown-divider"></div>
-				  <a class="dropdown-item" href="/Exercise3">Exercise 3</a>
+				  <a class="dropdown-item" href="../Exercise3">Exercise 3</a>
 				  <a class="dropdown-item" href="#">Exercise 4</a>
 				</div>
 			  </li>
@@ -51,7 +51,7 @@ if(isset($_SESSION['username'])){
 				  Assigned to me
 				</a>
 				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-				  <a class="dropdown-item" href="Exercise1/assigned.php">Hosts</a>
+				  <a class="dropdown-item" href="../Exercise1/assigned.php">Hosts</a>
 				  <div class="dropdown-divider"></div>
 				  <a class="dropdown-item" href="#">Other</a>
 				</div>
@@ -60,7 +60,7 @@ if(isset($_SESSION['username'])){
 				if ($_SESSION['AccountType'] == "admin")
 				{ ?>
 				<li class="nav-item">
-					<a class="nav-link" href="/phpmyadmin/" target="_blank">Database</a>
+					<a class="nav-link" href="../phpmyadmin/" target="_blank">Database</a>
 				 </li>
 				 <li class="nav-item">
 					<a class="nav-link" href="#">User accounts</a>

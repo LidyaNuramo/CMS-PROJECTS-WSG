@@ -92,7 +92,7 @@ if(!empty($_GET['action'])){
 				"assignedto"=>$assignedto,
 			);
 			$database->insertRows("hosts",$data);
-			$rr="Location: ../Exercise2";
+			$rr="Location: ../Exercise1";
 			header($rr);
 			break;
    }

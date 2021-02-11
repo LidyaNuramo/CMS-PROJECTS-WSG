@@ -57,12 +57,21 @@ include('../header.php');
 	?>
 	</pre>
 	<br>
-
 	<?php
 	$ip = gethostbyname('lidyanuramo.com');
 	echo '<br>Host IP address: '.$ip . '<br>';
 	$ip = $_SERVER["REMOTE_ADDR"];
 	echo 'User device ip address: '.$ip;
+	?>
+	<br>
+
+	<label for="name" class="col-sm-2 col-form-label">DNS Info:</label>
+	<br>
+	<?php
+	$time1 = time ();
+	$time2 = date ("r", $time1);
+	echo 'Unix time: ' . $time1 . "<br>";
+	echo 'Readable format: ' . $time2;
 	?>
 
 	<br>

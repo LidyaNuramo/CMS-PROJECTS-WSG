@@ -43,6 +43,24 @@ include('../header.php');
 	echo "<pre>$output</pre>";
 	?>
 	</div>
+	<br>
+
+	<label for="name" class="col-sm-2 col-form-label" style="font-size: 14pt;margin-left: 180px;" required>DNS Info:</label>
+	<br>
+	<div class="container" style="margin-left: 180px;">
+	<?php
+	$result = dns_get_record("lidyanuramo.com");
+	print_r($result);
+	$ip = gethostbyname('lidyanuramo.com');
+	echo $ip . '<BR />';
+	$ip = $_SERVER["REMOTE_ADDR"];
+	echo $ip. '<BR />';
+	$hostname = gethostbyaddr("8.8.8.8");
+	echo $hostname. '<BR />';
+	$hostname = gethostbyaddr($_SERVER['REMOTE_ADDR']);
+	echo $hostname;
+	?>
+	</div>
 
 	<br>
 	<label for="name" class="col-sm-2 col-form-label" style="font-size: 14pt;margin-left: 180px;" required>PHP Info:</label>

@@ -11,21 +11,25 @@ include('../header.php');
 		</div>
 	</div>
 	
-	<div class="container" style="margin-left: 180px;">
-	<label for="name" class="col-sm-2 col-form-label" style="font-size: 14pt; margin-top: -300px;">PHP: Who am I?:
+	<div class="container" style="margin-left: 180px;font-size: 12pt;">
+	<label for="name" class="col-sm-2 col-form-label" style="margin-top: -300px;">PHP: Who am I?:
 	<?php
 		echo exec ('whoami');
 	?>
 	</label>
 	<br>
 
-	<label for="name" class="col-sm-2 col-form-label" style="font-size: 14pt;">Hosting Server Info:</label>
+	<label for="name" class="col-sm-2 col-form-label">Hosting Server Info:</label>
 	<br>
 	<pre>
 		<?php
 		exec ('TERM=xterm /usr/bin/top n 1 b i',
 		$top, $error );
 		echo nl2br(implode("\n",$top));
+		?>
+	</pre>	
+	<pre>
+		<?php
 		if ($error){
 		exec ('TERM=xterm /usr/bin/top n 1 b
 		2>&1', $error );
@@ -36,7 +40,7 @@ include('../header.php');
 	</pre>
 	<br>
 
-	<label for="name" class="col-sm-2 col-form-label" style="font-size: 14pt;">Exerice2 Directory Files Info:</label>
+	<label for="name" class="col-sm-2 col-form-label">Exerice2 Directory Files Info:</label>
 	<br>
 	<?php
 	$output = shell_exec ('ls -al');
@@ -44,7 +48,7 @@ include('../header.php');
 	?>
 	<br>
 
-	<label for="name" class="col-sm-2 col-form-label" style="font-size: 14pt;">DNS Info:</label>
+	<label for="name" class="col-sm-2 col-form-label">DNS Info:</label>
 	<br>
 	<pre>
 	<?php
@@ -58,11 +62,11 @@ include('../header.php');
 	$ip = gethostbyname('lidyanuramo.com');
 	echo '<br>Host IP address: '.$ip . '<br>';
 	$ip = $_SERVER["REMOTE_ADDR"];
-	echo 'User device ip address '.$ip;
+	echo 'User device ip address: '.$ip;
 	?>
 
 	<br>
-	<label for="name" class="col-sm-2 col-form-label" style="font-size: 14pt;">PHP Info:</label>
+	<label for="name" class="col-sm-2 col-form-label">PHP Info:</label>
 	<br>
 	</div>
 	<?php

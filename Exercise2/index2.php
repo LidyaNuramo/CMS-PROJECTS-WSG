@@ -11,7 +11,7 @@ include('../header.php');
 		</div>
 	</div>
 	
-	<div class="container" style="margin-left: 180px;font-size: 12pt;">
+	<div class="container" style="margin-left: 180px;font-size: 12pt;color: white;">
 	<label for="name" class="col-sm-2 col-form-label" style="margin-top: -300px;">PHP: Who am I?:
 	<?php
 		echo exec ('whoami');
@@ -44,7 +44,7 @@ include('../header.php');
 	<br>
 	<?php
 	$output = shell_exec ('ls -al');
-	echo "<pre>$output</pre>";
+	echo "<pre>".$output."</pre>";
 	?>
 	<br>
 

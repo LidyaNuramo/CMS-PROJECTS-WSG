@@ -14,9 +14,7 @@ include('../header.php');
 		</div>
 	</div>
 	
-	<?php
-		echo phpinfo ();
-	?>
+
 	
 	<br>
 	<br>

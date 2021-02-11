@@ -112,7 +112,7 @@
                     }
                     ?>
 					<tr>
-						<td colspan="2"><form method='POST'><a href='assigned.php' class='btn btn-info' style='width:150px;color: white;'>Hosts assigned me</a></form></td>
+						<td colspan="2"><form method='POST'><a href='assigned.php' class='btn btn-info' style='width:100px;'>Hosts assigned me</a></form></td>
 						<td colspan="6"> </td>
 						<td colspan="2"><form method='POST'><a href='add.php' class='btn btn-success' style='width:100px;'>Add Host</a></form></td>
 					</tr>

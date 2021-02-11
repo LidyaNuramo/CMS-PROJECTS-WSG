@@ -7,7 +7,7 @@
 		<meta http-equiv="refresh" content="10" />
 		<div class="row" style="max-width:75%;">
             <div class="col-sm-12">
-                <table class="table table-striped" border="5" style="margin-top: 70px;margin-left: 2%;">
+                <table class="table table-striped" border="5" style="margin-top: 70px;margin-left: 2%;max-width:75%;">
 				<thead>
 					<tr class="thead-dark" style="font-size: 16pt;white-space:nowrap;">
 						<th scope="col" colspan="10"><p class="h1" style="color: white;">Monitored hosts</p></th>
@@ -17,15 +17,15 @@
                         <th scope="col">Address</th>
                         <th scope="col">Port</th>
 						<th scope="col">Status</th>
-                        <th scope="col" style="max-width:50%;">Reconnection attempts</th>
-                        <th scope="col" style="max-width:75%;">Connection loss time </th>
-                        <th scope="col" style="max-width:60%;">Total downtime</th>
+                        <th scope="col" style="max-width:20%;">Reconnection attempts</th>
+                        <th scope="col" style="max-width:50%;">Connection loss time </th>
+                        <th scope="col" style="max-width:40%;">Total downtime</th>
 						<th scope="col">Added by</th>
 						<th scope="col">Assigned to</th>
                         <th scope="col">Action</th>
                     </tr>
                 </thead>
-                <tbody style="font-size: 12pt;color: black;font-weight: bold;background: rgba(192,192,192, 0.7);max-width:75%;">
+                <tbody style="font-size: 12pt;color: black;font-weight: bold;background: rgba(192,192,192, 0.7);">
                     <?php
                     $where['id']="";
                     $results=$database->getRows("hosts","*",$where);

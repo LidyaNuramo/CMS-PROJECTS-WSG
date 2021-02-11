@@ -10,7 +10,7 @@
                 <table class="table table-striped" border="5" style="margin-top: 70px;margin-left: 2%;">
 				<thead>
 					<tr class="thead-dark" style="font-size: 16pt;white-space:nowrap;">
-						<th scope="col" colspan="8"><p class="h1" style="color: white;">Monitored hosts</p></th>
+						<th scope="col" colspan="10"><p class="h1" style="color: white;">Monitored hosts</p></th>
 					</tr>
                     <tr class="thead-dark" style="font-size: 16pt;white-space:nowrap;">
                         <th scope="col">#</th>
@@ -20,6 +20,8 @@
                         <th scope="col">Reconnection attempts</th>
                         <th scope="col">Connection loss time </th>
                         <th scope="col">Total downtime</th>
+						<th scope="col">Added by</th>
+						<th scope="col">Assigned to</th>
                         <th scope="col">Action</th>
                     </tr>
                 </thead>
@@ -92,6 +94,18 @@
 						<td><?php echo $attempts;?></td>
                         <td><?php echo $failedtime;?></td>
                         <td><?php echo $durationhr;?>:<?php echo $durationmin;?>:<?php echo $durationsec;?></td>
+						<?php
+							$addedby = $result['addedby'];
+							$assignedby = $result['assignedto'];
+							$where3['id']= '='.$addedby;
+							$results3=$database->getRow("users","*",$where3);
+							$added = $results3['firstname']." ".$results3['lastname'];
+							$where4['id']= '='.$assignedby;
+							$results4=$database->getRow("users","*",$where4);
+							$assigned = $results4['firstname']." ".$results4['lastname'];
+						?>
+						<td><?php echo $added;?></td>
+						<td><?php echo $assigned;?></td>
                         <td><form method='POST'><a href='../DB/process.php?action=deleteHost&id=<?php echo $result['id']?>' class='btn btn-danger' style='width:70px;'>Delete</a></form></td>
                     </tr>
                     <?php $num=$num+1;

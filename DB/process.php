@@ -72,13 +72,14 @@ if(!empty($_GET['action'])){
 			header('Location: ../Exercise1');
 			break;
 		case 'addhost':
-			$address=$_POST['name'];
-			$port=$_POST['lastname'];
+			$address=$_POST['address'];
+			$port=$_POST['port'];
 			$failedattempts=0;
 			$failedtime=NULL;
 			$totaldowntime=0;
 			session_start();
 			$addedby=$_SESSION['userID'];
+			$assignedto=$_POST['assignedto'];;
 			$database=new Database();
 			$data=array(
 				"ID"=>null,

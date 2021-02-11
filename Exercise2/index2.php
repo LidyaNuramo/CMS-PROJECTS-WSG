@@ -15,7 +15,7 @@ include('../header.php');
 	</div>
 	
 	<?php
-		echo phpinfo ();
+		echo "<div id='container' style='margin-top: -100 px;'>".phpinfo ()."</div>";
 	?>
 	
 	<br>

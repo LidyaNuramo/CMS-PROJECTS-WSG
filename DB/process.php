@@ -82,8 +82,8 @@ if(!empty($_GET['action'])){
 			$assignedto=$_POST['assignedto'];;
 			$database=new Database();
 			$data=array(
-				"ID"=>null,
-				"FirstName"=>$fname,
+				"id"=>null,
+				"address"=>$fname,
 				"LastName"=>$lname,
 				"AccountType"=>"standard",
 				"Email"=>$email,

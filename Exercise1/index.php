@@ -17,9 +17,9 @@
                         <th scope="col">Address</th>
                         <th scope="col">Port</th>
 						<th scope="col">Status</th>
-                        <th scope="col">Reconnection attempts</th>
-                        <th scope="col">Connection loss time </th>
-                        <th scope="col">Total downtime</th>
+                        <th scope="col" style="max-width:85%;">Reconnection attempts</th>
+                        <th scope="col" style="max-width:85%;">Connection loss time </th>
+                        <th scope="col" style="max-width:85%;">Total downtime</th>
 						<th scope="col">Added by</th>
 						<th scope="col">Assigned to</th>
                         <th scope="col">Action</th>

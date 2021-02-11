@@ -52,7 +52,7 @@ include('../header.php');
 	$result = dns_get_record("lidyanuramo.com");
 	print_r($result);
 	$ip = gethostbyname('lidyanuramo.com');
-	echo $ip . '<BR />';
+	echo "Host IP address: ".$ip . '<BR />';
 	$ip = $_SERVER["REMOTE_ADDR"];
 	echo $ip. '<BR />';
 	?>

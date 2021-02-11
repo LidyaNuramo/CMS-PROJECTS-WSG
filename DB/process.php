@@ -83,12 +83,13 @@ if(!empty($_GET['action'])){
 			$database=new Database();
 			$data=array(
 				"id"=>null,
-				"address"=>$fname,
-				"LastName"=>$lname,
-				"AccountType"=>"standard",
-				"Email"=>$email,
-				"Phone"=>$phone,
-				"Password"=>$password,
+				"address"=>$address,
+				"port"=>$port,
+				"failedattempts"=>$failedattempts,
+				"failedtime"=>$failedtime,
+				"totaldowntime"=>$totaldowntime,
+				"addedby"=>$addedby,
+				"assignedto"=>$assignedto,
 			);
 			$database->insertRows("hosts",$data);
 			$rr="Location: ../Exercise2";

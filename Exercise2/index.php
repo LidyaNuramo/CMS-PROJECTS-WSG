@@ -35,7 +35,10 @@
 					$address= $ipaddress;
 					date_default_timezone_set("Europe/Warsaw"); 
 					$time = date("Y-m-d h:i:sa");
-					$gplink= 'https://www.google.pl/maps/place/'.$ipaddress;
+					$json = file_get_contents("http://ipinfo.io/{$address}/geo");
+					$details = json_decode ($json);
+					$location = $details -> loc;
+					$gplink= "https://www.google.com/maps/search/?api=1&query=".$location;
 					$data=array(
 						"ID"=>null,
 						"address"=>$address,

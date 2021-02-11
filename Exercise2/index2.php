@@ -12,7 +12,7 @@ include('../header.php');
 	</div>
 	
 	<div class="container" style="margin-left: 180px;font-size: 12pt;color: white;">
-	<label for="name" class="col-sm-2 col-form-label" style="margin-top: -300px;">PHP: Who am I?:
+	<label for="name" class="col-sm-2 col-form-label" style="margin-top: -600px;">PHP: Who am I?:
 	<?php
 		echo exec ('whoami');
 	?>

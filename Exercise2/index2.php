@@ -35,12 +35,14 @@ include('../header.php');
 	</div>
 	<br>
 
-	<label for="name" class="col-sm-2 col-form-label" style="font-size: 14pt;margin-left: 180px;" required>Directory Files Info:</label>
+	<label for="name" class="col-sm-2 col-form-label" style="font-size: 14pt;margin-left: 180px;" required>Exerice2 Directory Files Info:</label>
 	<br>
+	<div class="container" style="margin-left: 180px;">
 	<?php
 	$output = shell_exec ('ls -al');
 	echo "<pre>$output</pre>";
 	?>
+	</div>
 
 	<br>
 	<label for="name" class="col-sm-2 col-form-label" style="font-size: 14pt;margin-left: 180px;" required>PHP Info:</label>

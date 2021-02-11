@@ -11,8 +11,14 @@ include('../header.php');
 		</div>
 	</div>
 	
+	<label for="name" class="col-sm-2 col-form-label" style="font-size: 14pt; margin-left: 200px;" required>PHP: Who am I?:</lable>
+	<label for="name" class="col-sm-2 col-form-label" style="font-size: 14pt; margin-left: 200px;" required>
 	<?php
 		echo exec ('whoami');
+	?>
+	</lable>
+	<label for="name" class="col-sm-2 col-form-label" style="font-size: 14pt; margin-left: 200px;" required>PHP Info:</lable>
+	<?php
 		echo phpinfo ();
 	?>
 	

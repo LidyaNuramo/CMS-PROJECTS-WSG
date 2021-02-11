@@ -11,7 +11,7 @@
 					<div class="col-lg-3 col-md-6 col-sm-6 col-12 px-5 mb-5">
 						<h3 class="tm-text-primary mb-4 tm-footer-title">Links</h3>
 						<ul class="tm-footer-links pl-0">
-							<li><a href="mailto:lidyagnuramo@gmail.com">Contact</a></li>
+							<li><a href="mailto:lidyagnuramo@gmail.com">Email</a></li>
 						</ul>
 					</div>
 					<div class="col-lg-3 col-md-6 col-sm-6 col-12 px-5 mb-5">

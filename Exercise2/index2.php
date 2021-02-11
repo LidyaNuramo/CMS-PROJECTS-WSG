@@ -48,13 +48,19 @@ include('../header.php');
 	<label for="name" class="col-sm-2 col-form-label" style="font-size: 14pt;margin-left: 180px;" required>DNS Info:</label>
 	<br>
 	<div class="container" style="margin-left: 180px;">
+	<pre>
 	<?php
 	$result = dns_get_record("lidyanuramo.com");
 	print_r($result);
+	?>
+	</pre>
+	<br>
+
+	<?php
 	$ip = gethostbyname('lidyanuramo.com');
-	echo "<br>Host IP address: ".$ip . '<BR />';
+	echo '<br>Host IP address: '.$ip . '<br>';
 	$ip = $_SERVER["REMOTE_ADDR"];
-	echo $ip. '<BR />';
+	echo $ip;
 	?>
 	</div>
 

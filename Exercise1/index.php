@@ -5,7 +5,7 @@
 		$database= new Database();
 ?>
 		<meta http-equiv="refresh" content="10" />
-		<div class="row" style="max-width:85%;">
+		<div class="row" style="max-width:75%;">
             <div class="col-sm-12">
                 <table class="table table-striped" border="5" style="margin-top: 70px;margin-left: 2%;">
 				<thead>
@@ -17,15 +17,15 @@
                         <th scope="col">Address</th>
                         <th scope="col">Port</th>
 						<th scope="col">Status</th>
-                        <th scope="col" style="max-width:85%;">Reconnection attempts</th>
-                        <th scope="col" style="max-width:85%;">Connection loss time </th>
-                        <th scope="col" style="max-width:85%;">Total downtime</th>
+                        <th scope="col" style="max-width:50%;">Reconnection attempts</th>
+                        <th scope="col" style="max-width:75%;">Connection loss time </th>
+                        <th scope="col" style="max-width:60%;">Total downtime</th>
 						<th scope="col">Added by</th>
 						<th scope="col">Assigned to</th>
                         <th scope="col">Action</th>
                     </tr>
                 </thead>
-                <tbody style="font-size: 12pt;color: black;font-weight: bold;background: rgba(192,192,192, 0.7);max-width:85%;">
+                <tbody style="font-size: 12pt;color: black;font-weight: bold;background: rgba(192,192,192, 0.7);max-width:75%;">
                     <?php
                     $where['id']="";
                     $results=$database->getRows("hosts","*",$where);

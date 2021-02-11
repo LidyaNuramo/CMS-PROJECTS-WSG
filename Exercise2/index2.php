@@ -11,16 +11,17 @@ include('../header.php');
 		</div>
 	</div>
 	
-	<label for="name" class="col-sm-2 col-form-label" style="font-size: 14pt; margin-left: 180px;margin-top: -300px;">PHP: Who am I?:
+	<div class="container" style="margin-left: 180px;">
+	<label for="name" class="col-sm-2 col-form-label" style="font-size: 14pt; margin-top: -300px;">PHP: Who am I?:
 	<?php
 		echo exec ('whoami');
 	?>
 	</label>
 	<br>
 
-	<label for="name" class="col-sm-2 col-form-label" style="font-size: 14pt;margin-left: 180px;" required>Hosting Server Info:</label>
+	<label for="name" class="col-sm-2 col-form-label" style="font-size: 14pt;">Hosting Server Info:</label>
 	<br>
-	<div class="container" style="margin-left: 180px;">
+	<pre>
 		<?php
 		exec ('TERM=xterm /usr/bin/top n 1 b i',
 		$top, $error );
@@ -32,22 +33,19 @@ include('../header.php');
 		exit ($error[0]);
 		}
 		?>
-	</div>
+	</pre>
 	<br>
 
-	<label for="name" class="col-sm-2 col-form-label" style="font-size: 14pt;margin-left: 180px;" required>Exerice2 Directory Files Info:</label>
+	<label for="name" class="col-sm-2 col-form-label" style="font-size: 14pt;">Exerice2 Directory Files Info:</label>
 	<br>
-	<div class="container" style="margin-left: 180px;">
 	<?php
 	$output = shell_exec ('ls -al');
 	echo "<pre>$output</pre>";
 	?>
-	</div>
 	<br>
 
-	<label for="name" class="col-sm-2 col-form-label" style="font-size: 14pt;margin-left: 180px;" required>DNS Info:</label>
+	<label for="name" class="col-sm-2 col-form-label" style="font-size: 14pt;">DNS Info:</label>
 	<br>
-	<div class="container" style="margin-left: 180px;">
 	<pre>
 	<?php
 	$result = dns_get_record("lidyanuramo.com");
@@ -60,13 +58,13 @@ include('../header.php');
 	$ip = gethostbyname('lidyanuramo.com');
 	echo '<br>Host IP address: '.$ip . '<br>';
 	$ip = $_SERVER["REMOTE_ADDR"];
-	echo $ip;
+	echo 'User device ip address '.$ip;
 	?>
-	</div>
 
 	<br>
-	<label for="name" class="col-sm-2 col-form-label" style="font-size: 14pt;margin-left: 180px;" required>PHP Info:</label>
+	<label for="name" class="col-sm-2 col-form-label" style="font-size: 14pt;">PHP Info:</label>
 	<br>
+	</div>
 	<?php
 		echo phpinfo ();
 	?>

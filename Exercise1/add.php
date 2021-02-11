@@ -23,8 +23,8 @@
 		  </div>
 
 		  <div class="form-row" style="margin-top: 30px;">
-			<label for="name" class="col-sm-2 col-form-label" tyle="font-size: 14pt;" required>Assigned to:</lable>
-				<select class="form-control" name="assignedto">
+			<label for="name" class="col-sm-2 col-form-label" style="font-size: 14pt;" required>Assigned to:</lable>
+				<select class="form-control" name="assignedto" style="height: 15px;">
 				  <option selected value=""> </option>
 		      		<?php
 			    	$database=new Database();

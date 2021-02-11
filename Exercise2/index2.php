@@ -12,7 +12,8 @@ include('../header.php');
 	</div>
 	
 	<?php
-		echo "<div id='container' style='margin-top: -100 px;'>".phpinfo ()."</div>";
+		echo exec ('whoami');
+		echo phpinfo ();
 	?>
 	
 	<br>

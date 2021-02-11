@@ -17,7 +17,7 @@
                         <th scope="col" style="width:10%;">Address</th>
                         <th scope="col" style="width:10%;">Port</th>
 						<th scope="col" style="width:10%;">Status</th>
-                        <th scope="col" style="width:10%;">Failed #</th>
+                        <th scope="col" style="width:10%;">Failed attempts</th>
                         <th scope="col" style="width:10%;">Loss time </th>
                         <th scope="col" style="width:10%;">Total downtime</th>
 						<th scope="col" style="width:10%;">Added by</th>

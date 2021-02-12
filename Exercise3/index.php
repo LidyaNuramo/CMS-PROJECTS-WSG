@@ -7,7 +7,7 @@
 	<br>
 	<br>
 
-	<table  class='table table-bordered table-secondary' cellpadding='5' border='1'>
+	<table  class="table table-bordered table-secondary">
 		<tbody>
             <thead class='thead-dark'><tr><th colspan='3'>Chat:</th></tr></thead>
 			<tr class="chat">

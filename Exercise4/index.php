@@ -9,8 +9,9 @@
 	<br>
 	<br>
 
-
-	<img src="https://lidyanuramo.com/Exercise4/graph.php" style="-webkit-user-select: none;margin: auto;background-color: hsl(0, 0%, 90%);transition: background-color 300m">
+	<div class="container" style="margin-left: 100 px;">
+		<img class="img-fluid" src="https://lidyanuramo.com/Exercise4/graph.php" style="-webkit-user-select: none;margin: auto;background-color: hsl(0, 0%, 90%);transition: background-color 300m;">
+	</div>
 
 
 	<br>

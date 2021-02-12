@@ -6,7 +6,7 @@ include('../header.php');
 		<div class="container-fluid tm-container-content tm-mt-60">
 			<div class="row mb-4">
 				<h2 class="col-6 tm-text-primary" style="color: white;">
-					Latest Exercises
+					CMS Exercises
 				</h2>
 			</div>
 			<div class="row tm-mb-90 tm-gallery">

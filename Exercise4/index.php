@@ -3,16 +3,60 @@
 	include('../DB/process.php');
 	include('../header.php');
 ?>
-
-    <meta http-equiv = "refresh" content = "10" />
 	<br>
 	<br>
 	<br>
 
 	<div class="container" style="margin-left: 100 px;">
-		<img class="img-fluid" src="https://lidyanuramo.com/Exercise4/graph.php" style="-webkit-user-select: none;margin: auto;background-color: hsl(0, 0%, 90%);transition: background-color 300m;">
+		<img class="img-fluid" src="graph.php" style="width:100%;height:100%;">
 	</div>
 
+	<br>
+	<br>
+
+	<table  class="table table-bordered table-secondary">
+		<tbody>
+            <thead class="thead-dark">
+				<tr>
+					<th colspan='2'>Add to graph:</th>
+				</tr>
+			</thead>
+			<tr>
+				<td colspan="2">
+					<form class="form-group row" method="POST" action="../DB/process.php?action=addgraph">
+						<div class="form-row" style="font-size: 14pt;">
+							<label for="name" class="col-sm-2 col-form-label">X1:</label>
+							<input type="text" name="x1" maxlength="10" size="10" required>
+						</div>
+						<br>
+						<div class="form-row" style="font-size: 14pt;">
+							<label for="name" class="col-sm-2 col-form-label">X2:</label>
+							<input type="text" name="x2" maxlength="10" size="10" required>
+						</div>
+						<br>
+						<div class="form-row" style="font-size: 14pt;">
+							<label for="name" class="col-sm-2 col-form-label">X3:</label>
+							<input type="text" name="x3" maxlength="10" size="10" required>
+						</div>
+						<br>
+						<div class="form-row" style="font-size: 14pt;">
+							<label for="name" class="col-sm-2 col-form-label">X4:</label>
+							<input type="text" name="x4" maxlength="10" size="10" required>
+						</div>
+						<br>
+						<div class="form-row" style="font-size: 14pt;">
+							<label for="name" class="col-sm-2 col-form-label">X5:</label>
+							<input type="text" name="x5" maxlength="10" size="10" required>
+						</div>
+						<br>
+						<div class="form-row">
+							<button type="submit" class="btn btn-primary" id="submit">Submit</button>
+						</div>
+					</form>
+				</td>
+			</tr>
+		</tbody>
+	</table>
 
 	<br>
 	<br>

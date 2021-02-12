@@ -118,6 +118,28 @@ if(!empty($_GET['action'])){
 			$rr="Location: ../Exercise3";
 			header($rr);
 			break;
+		case 'addgraph':
+			date_default_timezone_set("Europe/Warsaw"); 
+			$time = date("Y-m-d h:i:sa");
+			$x1  = $_POST['x1'];
+			$x2  = $_POST['x2'];
+			$x3  = $_POST['x3'];
+			$x4  = $_POST['x4'];
+			$x5  = $_POST['x5'];
+			$database= new Database();
+			$data=array(
+				"id"=>null,
+				"x1"=>$x1,
+				"x2"=>$x1,
+				"x3"=>$x1,
+				"x4"=>$x1,
+				"x5"=>$x1,
+				"datetime"=>$time,
+			);
+			$database->insertRows("measurements",$data);
+			$rr="Location: ../Exercise4";
+			header($rr);
+			break;
 	}
 }
 ?>

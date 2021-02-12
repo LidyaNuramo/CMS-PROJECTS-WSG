@@ -31,9 +31,13 @@
 		 array($datetime[5],5,$x5[1],$x5[2],$x5[3],$x5[4],$x5[5]),
 	);
 	$plot->SetDataValues($data);
-	$plot->SetDataType('data-data');
-	$plot->SetXTitle('Time');
-	$plot->SetYTitle('Input Data');
+	$plot->SetDataType('data-data-yx');
+	$plot->SetPlotType('linepoints');
 	$plot->SetTitle('Generated graph');
+	$plot->SetXTitle('Input Data');
+	$plot->SetYTitle('Time');
+	$plot->SetDataLabelPos('none');
+	$plot->SetDrawXGrid(False);
+	$plot->SetDrawYGrid(False);
 	$plot->DrawGraph();
 ?>

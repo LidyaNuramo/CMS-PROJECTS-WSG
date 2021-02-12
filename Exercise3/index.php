@@ -21,9 +21,9 @@
 				$num=1;
 				foreach($results as $result){?>
 					<tr class="chat">
-						<td><? echo $result['nick']; ?> : </td>
-						<td><? echo $result['message']; ?></td>
-						<td><? echo $result['datetime']; ?></td>
+						<td><?php echo $result['nick']; ?> : </td>
+						<td><?php echo $result['message']; ?></td>
+						<td><?php echo $result['datetime']; ?></td>
 					</tr>
 				<?php
 					$num = $num + 1;

@@ -45,7 +45,7 @@
 								}
 								else{
 								?>
-									<input type="text" name="user" maxlength="10" size="10" value="<?php echo $_SESSION['nickname'];?>" readonly="true" required>
+									<input type="text" name="user" maxlength="10" size="10" value="<?php echo $_SESSION['nickname'];?>" readonly="true" style="background-color: rgb(190,190,190);" required>
 								<?php
 								}
 							?>

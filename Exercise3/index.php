@@ -37,12 +37,24 @@
 					<form class="form-group row" method="POST" action="../DB/process.php?action=addpost">
 						<div class="form-row" style="font-size: 14pt;">
 							<label for="name" class="col-sm-2 col-form-label">Nickname:</label>
-							<input type="text" name="user" maxlength="10" size="10">
+							<?php 
+								if(!isset($_SESSION['nickname'])){
+								?>	
+									<input type="text" name="user" maxlength="10" size="10" required>
+								<?php
+								}
+								else{
+								?>
+									<input type="text" name="user" maxlength="10" size="10" value="<?php echo $_SESSION['nickname'];?>" readonly="true" required>
+								<?php
+								}
+							?>
+							
 						</div>
 						<br>
 						<div class="form-row" style="font-size: 14pt;">
 							<label for="name" class="col-sm-2 col-form-label">Post:</label>
-							<input type="text" name="post" maxlength="90" size="90">
+							<input type="text" name="post" maxlength="90" size="90" required>
 						</div>
 						<br>
 						<div class="form-row">

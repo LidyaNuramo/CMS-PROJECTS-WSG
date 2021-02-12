@@ -11,13 +11,13 @@
 		<tbody>
             <thead class="thead-dark">
 				<tr>
-					<th colspan='3'>Posts:</th>
+					<th colspan='3'>Most recent posts:</th>
 				</tr>
 			</thead>
 				<?php 
 				$where['id']= "";
 				$database=new Database();
-				$results=$database->getRow("messages","*",$where,"AND","id DESC");
+				$results=$database->getRows("messages","*",$where,"AND","id DESC");
 				$num=1;
 				foreach($results as $result){?>
 					<tr class="chat">

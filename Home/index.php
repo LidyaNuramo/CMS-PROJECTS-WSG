@@ -48,7 +48,7 @@ include('../header.php');
 				</div>
 				<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
 					<figure class="effect-ming tm-video-item">
-						<img src="../Image/ex4.jpg" alt="Image" class="img-fluid"  style="width: 300px; height: 170px;">
+						<img src="../Image/ex6.jpg" alt="Image" class="img-fluid"  style="width: 300px; height: 170px;">
 						<figcaption class="d-flex align-items-center justify-content-center">
 							<h2>Exercise 6</h2>
 							<a href="../Exercise6" target="_blank">View more</a>
@@ -57,7 +57,7 @@ include('../header.php');
 				</div>
 				<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
 					<figure class="effect-ming tm-video-item">
-						<img src="../Image/ex4.jpg" alt="Image" class="img-fluid"  style="width: 300px; height: 170px;">
+						<img src="../Image/ex10.png" alt="Image" class="img-fluid"  style="width: 300px; height: 170px;">
 						<figcaption class="d-flex align-items-center justify-content-center">
 							<h2>Exercise 10</h2>
 							<a href="#">View more</a>

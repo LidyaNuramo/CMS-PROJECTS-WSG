@@ -104,8 +104,8 @@ if(!empty($_GET['action'])){
 			$data=array(
 				"id"=>null,
 				"nick"=>$user,
-				"datetime"=>$post,
-				"message"=>$time,
+				"message"=>$post,
+				"datetime"=>$time,
 			);
 			$database->insertRows("messages",$data);
 			$text = '<table  border=”1” width="90%"><tr><td>'.$post.'</td><td width="80">'.$user.'</td><td width="60" bgcolor="yellow">'.$time.'</td></tr></table><br>';

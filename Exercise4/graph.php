@@ -29,7 +29,6 @@
 		 array($datetime[3],3,$x3[1],$x3[2],$x3[3],$x3[4],$x3[5]),
 		 array($datetime[4],4,$x4[1],$x4[2],$x4[3],$x4[4],$x4[5]),
 		 array($datetime[5],5,$x5[1],$x5[2],$x5[3],$x5[4],$x5[5],
-		 array("",6,"","","","","")
 	);
 	$plot->SetDataValues($data);
 	$plot->SetDataType('data-data');

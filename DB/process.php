@@ -95,29 +95,6 @@ if(!empty($_GET['action'])){
 			$rr="Location: ../Exercise1";
 			header($rr);
 			break;
-		case 'addpost':
-			date_default_timezone_set("Europe/Warsaw"); 
-			$time = date("Y-m-d h:i:sa");
-			$user  = $_POST['user'];
-			$post  = $_POST['post'];
-			$database= new Database();
-			$data=array(
-				"id"=>null,
-				"nick"=>$user,
-				"datetime"=>$post,
-				"message"=>"$time",
-			);
-			$database->insertRows("messages",$data);
-			session_start();
-			if(isset($_SESSION['nickname'])){
-				$_SESSION['nickname'])= $user;
-			}
-			$text = '<table border="1" width="90%"><tr><td>'.$post.'</td><td width="80">'.$user.'</td><td width="60" bgcolor="yellow">'.$time.'</td></tr></table><br>';
-            $file = fopen ("conversation.txt", "a+");
-            fwrite ($file, $text);
-			$rr="Location: ../Exercise3";
-			header($rr);
-			break;
 	}
 }
 ?>

@@ -14,17 +14,17 @@
 					<th colspan='3'>Posts:</th>
 				</tr>
 			</thead>
-			<tr class="chat">
 				<?php 
 				$where['id']= "";
 				$database=new Database();
 				$results=$database->getRow("messages","*",$where,"AND","id DESC");
 				$num=1;
 				foreach($results as $result){?>
-					<td><? echo $result['nick']; ?> : </td>
-					<td><? echo $result['message']; ?></td>
-					<td><? echo $result['datetime']; ?></td>
-					</div>
+					<tr class="chat">
+						<td><? echo $result['nick']; ?> : </td>
+						<td><? echo $result['message']; ?></td>
+						<td><? echo $result['datetime']; ?></td>
+					</tr>
 				<?php
 					$num = $num + 1;
 					if ($num == 6){
@@ -32,7 +32,6 @@
 					}
 				}
 				?>
-			</tr>
 			<tr>
 				<td colspan="3">
 					<form class="form-group row" method="POST" action="../DB/process.php?action=addpost">

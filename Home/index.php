@@ -42,7 +42,7 @@ include('../header.php');
 						<img src="../Image/ex4.jpg" alt="Image" class="img-fluid"  style="width: 300px; height: 170px;">
 						<figcaption class="d-flex align-items-center justify-content-center">
 							<h2>Exercise 4</h2>
-							<a href="#">View more</a>
+							<a href="../Exercise4">View more</a>
 						</figcaption>                    
 					</figure>
 				</div>

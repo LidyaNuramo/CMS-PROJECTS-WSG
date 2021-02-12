@@ -97,7 +97,8 @@ if(!empty($_GET['action'])){
 			break;
 		case 'addpost':
 			//date_default_timezone_set("Europe/Warsaw"); 
-			$time = date("Y-m-d h:i:sa");
+			//$time = date("Y-m-d h:i:sa");
+			$time="";
 			$user  = $_POST['user'];
 			$post  = $_POST['post'];
 			$database= new Database();

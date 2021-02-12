@@ -23,12 +23,19 @@
 			break;
 		}
 	}
+	//$data = array(
+	//	 array($datetime[1],1,$x1[1],$x1[2],$x1[3],$x1[4],$x1[5]),
+	//	 array($datetime[2],2,$x2[1],$x2[2],$x2[3],$x2[4],$x2[5]),
+	//	 array($datetime[3],3,$x3[1],$x3[2],$x3[3],$x3[4],$x3[5]),
+	//	 array($datetime[4],4,$x4[1],$x4[2],$x4[3],$x4[4],$x4[5]),
+	//	 array($datetime[5],5,$x5[1],$x5[2],$x5[3],$x5[4],$x5[5]),
+	//);
 	$data = array(
-		 array($datetime[1],1,$x1[1],$x1[2],$x1[3],$x1[4],$x1[5]),
-		 array($datetime[2],2,$x2[1],$x2[2],$x2[3],$x2[4],$x2[5]),
-		 array($datetime[3],3,$x3[1],$x3[2],$x3[3],$x3[4],$x3[5]),
-		 array($datetime[4],4,$x4[1],$x4[2],$x4[3],$x4[4],$x4[5]),
-		 array($datetime[5],5,$x5[1],$x5[2],$x5[3],$x5[4],$x5[5]),
+		 array($datetime[1],1,$x1[1],$x2[1],$x3[1],$x4[1],$x5[1]),
+		 array($datetime[2],2,$x1[2],$x2[2],$x3[2],$x4[2],$x5[2]),
+		 array($datetime[3],3,$x1[3],$x2[3],$x3[3],$x4[3],$x5[3]),
+		 array($datetime[4],4,$x1[4],$x2[4],$x3[4],$x4[4],$x5[4]),
+		 array($datetime[5],5,$x1[5],$x2[5],$x3[5],$x4[5],$x5[5]),
 	);
 	$plot->SetDataValues($data);
 	$plot->SetDataType('text-data-yx');

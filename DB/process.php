@@ -112,9 +112,6 @@ if(!empty($_GET['action'])){
 			if(isset($_SESSION['nickname'])){
 				$_SESSION['nickname'])= $user;
 			}
-			$text = '<table border="1" width="90%"><tr><td>'.$post.'</td><td width="80">'.$user.'</td><td width="60" bgcolor="yellow">'.$time.'</td></tr></table><br>';
-			$file = fopen ("conversation.txt", "a+");
-			fwrite ($file, $text);
 			$rr="Location: ../Exercise3";
 			header($rr);
 			break;

@@ -5,7 +5,7 @@
 		$database= new Database();
 ?>
 
-		<form class="form-group row" action="../DB/process.php?action=addhost" method="POST" onSubmit="return(check_pass())" style="background: rgba(192,192,192, 0.7);padding-top:30px;margin-top: 100px;padding-bottom:60px;height: 100%;width: 90%;margin-left: 5%;">
+		<form class="form-group row" action="../DB/process.php?action=addhost" method="POST" style="background: rgba(192,192,192, 0.7);padding-top:30px;margin-top: 100px;padding-bottom:60px;height: 100%;width: 90%;margin-left: 5%;">
 		  <div class="form-row">
 			<label style="font-size: 3vw;color: black;margin-left: 60px;font-weight: bold;" class="control-label">Fill out the form to add a new host for monitoring</label>
 			<br>
@@ -14,17 +14,17 @@
 
 		  <div class="form-row" style="font-size: 14pt;margin-top: 30px;">
 			  <label for="name" class="col-sm-2 col-form-label">Web/IP address:</label>
-			  <input class="form-control" type="text" placeholder="example.com" name="address">
+			  <input class="form-control" type="text" placeholder="example.com" name="address" required>
 		  </div>
 
 		  <div class="form-row" style="font-size: 14pt;margin-top: 30px;">
 			  <label for="name" class="col-sm-2 col-form-label">Port:</label>
-			  <input class="form-control" type="text" placeholder="80" name="port">
+			  <input class="form-control" type="text" placeholder="80" name="port" required>
 		  </div>
 
 		  <div class="form-row">
-			<label for="name" class="col-sm-2 col-form-label" style="font-size: 14pt; margin-top: 30px;" required>Assigned to:</lable>
-				<select class="form-control" name="assignedto" style="font-size: 14pt; height: 70%; width:620%;">
+			<label for="name" class="col-sm-2 col-form-label" style="font-size: 14pt; margin-top: 30px;">Assigned to:</label>
+				<select class="form-control" name="assignedto" style="font-size: 14pt; height: 70%; width:620%;" required>
 				  <option selected value=""> </option>
 		      		<?php
 			    	$database=new Database();

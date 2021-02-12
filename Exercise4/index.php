@@ -14,7 +14,7 @@
 	<br>
 	<br>
 
-	<table  class="table table-bordered table-secondary">
+	<table  class="table table-bordered table-secondary" style="margin-left: 200 px;width: 50%">
 		<tbody>
             <thead class="thead-dark">
 				<tr>

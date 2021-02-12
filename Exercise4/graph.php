@@ -5,7 +5,7 @@
 	$where['id']= "";
 	$database=new Database();
 	$results=$database->getRows("measurements","*",$where,"AND","id DESC");
-	$num=0;
+	$num=1;
 	$plot = new PHPlot();
 	$data = array();
 	foreach($results as $result){

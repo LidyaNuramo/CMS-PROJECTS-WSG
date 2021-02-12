@@ -75,7 +75,15 @@ if(isset($_SESSION['username'])){
 		</nav>
 		
 	</head>
-	<body style="background: url(../Image/bg2.png) no-repeat center center fixed; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;">
+	<body style="background: url(../Image/bg2.png) no-repeat center center fixed; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;"> 
+		<!--div class="tm-hero d-flex justify-content-center align-items-center" data-parallax="scroll" data-image-src="../Image/bg3.jpg" style="background: url(../Image/bg3.jpg);">
+			<form class="d-flex tm-search-form">
+				<input class="form-control tm-search-input" type="search" placeholder="Search" aria-label="Search">
+				<button class="btn btn-outline-success tm-search-btn" type="submit">
+					<i class="fas fa-search"></i>
+				</button>
+			</form>
+		</div-->
 <?php
 }
 else{

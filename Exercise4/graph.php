@@ -5,12 +5,11 @@
 	$where['id']= "";
 	$database=new Database();
 	$results=$database->getRows("measurements","*",$where,"AND","id DESC");
-	$num=1;
+	$num=0;
 	$plot = new PHPlot();
 	$data = array();
 	foreach($results as $result){
-		$title = "Line ".$num." at ".$result['datetime'];
-		$data2 = array($title,$num,$result['x1'],$result['x2'],$result['x3'],$result['x4'],$result['x5']);
+		$data2 = array($result['datetime'],$num,$result['x1'],$result['x2'],$result['x3'],$result['x4'],$result['x5']);
 		array_push($data,$data2);
 		$num = $num + 1;
 		if ($num == 6){

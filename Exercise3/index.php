@@ -9,12 +9,16 @@
 
 	<table  class="table table-bordered table-secondary">
 		<tbody>
-            <thead class='thead-dark'><tr><th colspan='3'>Posts:</th></tr></thead>
+            <thead class="thead-dark">
+				<tr>
+					<th colspan='3'>Posts:</th>
+				</tr>
+			</thead>
 			<tr class="chat">
 				<?php 
 				$where['id']= "";
 				$database=new Database();
-				$results=$database->getRow("messages","*",$where"AND","id DESC"));
+				$results=$database->getRow("messages","*",$where,"AND","id DESC");
 				$num=1;
 				foreach($results as $result){?>
 					<td><? echo $result['nick']; ?> : </td>

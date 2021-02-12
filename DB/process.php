@@ -106,11 +106,16 @@ if(!empty($_GET['action'])){
 				"id"=>null,
 				"nick"=>$user,
 				"datetime"=>$post,
-				"message"=>"$time",
+				"message"=>$time,
 			);
 			$database->insertRows("messages",$data);
 			session_start();
-			$_SESSION['nick'])= $user;
+			if(isset($_SESSION['nickname'])){
+				$_SESSION['nickname'])= $user;
+			}
+			$text = '<table  border=”1” width="90%"><tr><td>'.$post.'</td><td width="80">'.$user.'</td><td width="60" bgcolor="yellow">'.$time.'</td></tr></table><br>';
+			$file = fopen ("conversation.txt", "a+");
+			fwrite ($file, $text);
 			$rr="Location: ../Exercise3";
 			header($rr);
 			break;

@@ -96,8 +96,8 @@ if(!empty($_GET['action'])){
 			header($rr);
 			break;
 		case 'addpost':
-			//date_default_timezone_set("Europe/Warsaw"); 
-			//$time = date("Y-m-d h:i:sa");
+			date_default_timezone_set("Europe/Warsaw"); 
+			$time = date("Y-m-d h:i:sa");
 			$time="";
 			$user  = $_POST['user'];
 			$post  = $_POST['post'];
@@ -110,9 +110,7 @@ if(!empty($_GET['action'])){
 			);
 			$database->insertRows("messages",$data);
 			session_start();
-			if(isset($_SESSION['nickname'])){
-				$_SESSION['nickname'])= $user;
-			}
+			$_SESSION['nick'])= $user;
 			$rr="Location: ../Exercise3";
 			header($rr);
 			break;

@@ -9,7 +9,7 @@
 
 	<table  class="table table-bordered table-secondary">
 		<tbody>
-            <thead class='thead-dark'><tr><th colspan='3'>Chat:</th></tr></thead>
+            <thead class='thead-dark'><tr><th colspan='3'>Posts:</th></tr></thead>
 			<tr class="chat">
 				<?php 
 				$where['id']= "";
@@ -33,26 +33,23 @@
 				<td colspan="3">
 					<form class="form-group row" method="POST" action="../DB/process.php?action=addpost">
 						<div class="form-row" style="font-size: 14pt;">
-								<label for="name" class="col-sm-2 col-form-label">Nickname:</label>
-								<input type="text" name="user" maxlength="10" size="10">
+							<label for="name" class="col-sm-2 col-form-label">Nickname:</label>
+							<input type="text" name="user" maxlength="10" size="10">
 						</div>
 						<br>
 						<div class="form-row" style="font-size: 14pt;">
-								<label for="name" class="col-sm-2 col-form-label">Post:</label>
-								<input type="text" name="post" maxlength="90" size="90"><br>
+							<label for="name" class="col-sm-2 col-form-label">Post:</label>
+							<input type="text" name="post" maxlength="90" size="90">
 						</div>
-						<input type="submit" value="Send"/>
+						<br>
+						<div class="form-row">
+							<button type="submit" class="btn btn-primary" id="submit">Submit</button>
+						</div>
 					</form>
 				</td>
 			</tr>
 		</tbody>
 	</table>
-
-
-    Posts:
-    <br>
-    <?php include ("conversation.txt");?>
-    <br>
 
 	<br>
 	<br>

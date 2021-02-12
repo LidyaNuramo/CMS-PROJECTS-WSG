@@ -9,6 +9,6 @@
 				array('14:50',4,1));
 	$plot->SetDataValues($data);
 	$plot->SetDataType('data-data');
-	$plot->SetTitle('The example of the graph');       // optional title of the graph
+	$plot->SetTitle('Graph Title');
 	$plot->DrawGraph();
 ?>

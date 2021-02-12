@@ -12,10 +12,9 @@ if(isset($_SESSION['username'])){
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="shortcut icon" type="Image/x-icon" href="../Image/logo2.ico">
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-		<link rel="stylesheet" type="text/css" href="CSS/index.css">
+		<link rel="stylesheet" type="text/css" href="../CSS/index.css">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-		<link rel="stylesheet" type="text/css" href="css/index.css">
 		<script src='https://kit.fontawesome.com/a076d05399.js'></script>
 		<link rel="stylesheet" href="../CSS/bootstrap.min.css">
 		<link rel="stylesheet" href="../CSS/all.min.css">
@@ -42,6 +41,8 @@ if(isset($_SESSION['username'])){
 				  <div class="dropdown-divider"></div>
 				  <a class="dropdown-item" href="../Exercise3">Exercise 3</a>
 				  <a class="dropdown-item" href="../Exercise4">Exercise 4</a>
+				  <div class="dropdown-divider"></div>
+				  <a class="dropdown-item" href="../Exercise6" target="_blank">Exercise 6</a>
 				</div>
 			  </li>
 			  <li class="nav-item dropdown">

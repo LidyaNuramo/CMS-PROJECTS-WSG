@@ -38,7 +38,7 @@
 		 array($datetime[1],1,$x1[1],$x2[1],$x3[1],$x4[1],$x5[1]),
 	);
 	$plot->SetDataValues($data);
-	$plot->SetDataType('text-data-yx');
+	$plot->SetDataType('text-data');
 	$plot->SetTitle('Generated graph');
 	$plot->SetXTitle('Input Data');
 	$plot->SetYTitle('Time');

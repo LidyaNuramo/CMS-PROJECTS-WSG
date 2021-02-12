@@ -9,7 +9,7 @@
 	$plot = new PHPlot();
 	$data = array();
 	foreach($results as $result){
-		$data2 = array($result['datetime'],$num,$result['x1'],$result['x2'],$result['x3'],$result['x4'],$result['x5']);
+		$data2 = array($num,$result['datetime'],$result['x1'],$result['x2'],$result['x3'],$result['x4'],$result['x5']);
 		array_push($data,$data2);
 		$num = $num + 1;
 		if ($num == 6){

@@ -120,7 +120,7 @@ if(!empty($_GET['action'])){
 			break;
 		case 'addgraph':
 			date_default_timezone_set("Europe/Warsaw"); 
-			$time = date("h:i:sa");
+			$time = date("Y-m-d h:i:sa");
 			$x1  = $_POST['x1'];
 			$x2  = $_POST['x2'];
 			$x3  = $_POST['x3'];

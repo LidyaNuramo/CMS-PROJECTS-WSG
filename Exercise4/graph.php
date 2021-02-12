@@ -10,9 +10,9 @@
 	$data = array();
 	foreach($results as $result){
 		$title = "Line ".$num." at ".$result['datetime'];
-		$num = $num + 1;
-		$data2 = array($title,1,$result['x1'],$result['x2'],$result['x3'],$result['x4'],$result['x5']);
+		$data2 = array($title,$num,$result['x1'],$result['x2'],$result['x3'],$result['x4'],$result['x5']);
 		array_push($data,$data2);
+		$num = $num + 1;
 		if ($num == 6){
 			break;
 		}

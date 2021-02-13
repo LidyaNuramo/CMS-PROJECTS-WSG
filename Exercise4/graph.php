@@ -27,7 +27,7 @@
 		 array($datetime[1],1,$x1[1],$x1[2],$x1[3],$x1[4],$x1[5]),
 	);
 	$plot->SetDataValues($data);
-	$plot->SetDataType('text-data');
+	$plot->SetDataType('data-data');
 	$plot->SetTitle('Generated graph');
 	$plot->SetXTitle('Time');
 	$plot->SetYTitle('Input Data');

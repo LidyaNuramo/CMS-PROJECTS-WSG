@@ -20,7 +20,6 @@
 		}
 	}
 	$data = array(
-	
 		 array($datetime[1],1,$x1[1],$x1[2],$x1[3],$x1[4],$x1[5]),
 		 array($datetime[2],2,$x2[1],$x2[2],$x2[3],$x2[4],$x2[5]),
 		 array($datetime[3],3,$x3[1],$x3[2],$x3[3],$x3[4],$x3[5]),
